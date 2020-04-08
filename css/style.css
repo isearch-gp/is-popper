@@ -852,7 +852,8 @@ nav a:visited {
 	border-color: #5e5223;
 	background: #e0d8b7;
 	border-width: 1px;
-	transform: scale(1.5)
+	/***transform: scale(1.5)**/
+	transform: scale(2.5)
 }
 
 #submenu ol {
