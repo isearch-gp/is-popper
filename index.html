@@ -51,21 +51,21 @@
 
 <main id="content">
 <!--htdig_noindex-->
+<!--
 <aside id="ad_content" class="noprint" style="display: none !important;">
 <script async="" src="./Escaping Special Characters _ JavaScript _ The Art of Web_files/f.txt" style="display: none !important;"></script>
+-->
 <!-- The Art of Web - RWD Content -->
+<!--
 <ins class="adsbygoogle" style="display: none !important;" data-ad-client="ca-pub-9789897350102210" data-ad-slot="1433381437" data-ad-format="auto"></ins>
 <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
 </aside>
+-->
 
 <div id="submenu" class=""><ol><li id="submenu_trigger" class="mobileonly"><a href="https://www.the-art-of-web.com/javascript/escape/#">☰ Submenu</a></li><li><a href="https://www.the-art-of-web.com/javascript/escape/#section_0">Encoding and decoding using JavaScript and PHP</a></li><li><a href="https://www.the-art-of-web.com/javascript/escape/#section_1">Escaping Double and Single Quotes</a></li><li><a href="https://www.the-art-of-web.com/javascript/escape/#section_2">Table of encoded characters</a></li><li><a href="https://www.the-art-of-web.com/javascript/escape/#section_3">References</a></li><li><a href="https://www.the-art-of-web.com/javascript/escape/#user_comments">User Comments</a></li></ol></div>
 <!--/htdig_noindex-->
 
 <h1><span class="nomobile">JavaScript: </span>Escaping Special Characters</h1>
-
-<!--
-<p class="social_counters"><a class="tweets" title="Share on Twitter" target="_blank" href="https://twitter.com/intent/tweet?text=Escaping+Special+Characters:&amp;url=https%3A%2F%2Fwww.the-art-of-web.com%2Fjavascript%2Fescape%2F&amp;via=theartofweb"><span>&nbsp;<span>Tweet</span></span></a><a class="likes" title="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.the-art-of-web.com%2Fjavascript%2Fescape%2F"><span>3<span> Shares</span></span></a><a class="reddit" title="Post to Reddit" target="_blank" href="http://www.reddit.com/submit?title=Escaping+Special+Characters&amp;url=https%3A%2F%2Fwww.the-art-of-web.com%2Fjavascript%2Fescape%2F"><span>0<span> Tweets</span></span></a><a class="feedback" title="User Commentc" href="https://www.the-art-of-web.com/javascript/escape/#user_comments"><span>12<span> Comments</span></span></a></p>
--->
 
 <p>Every programming language has it's special characters - characters 
 that mean something special such as identifying a variable, the end of a 
@@ -89,85 +89,6 @@ Ajax</a> rather than a JavaScript emulation.  If you have a string to
 <b>decode</b>, use the buttons on the right instead.</p>
 
 <script type="text/javascript" src="./js/AjaxRequestXML.js.pagespeed.jm.9KC4un9F8a.js"></script>
-<!--
-<script type="text/javascript">function applyPHP(form,target,method){if(encodeURIComponent){var params={"q":form.input.value,"target":target,"method":method}
-return(new AjaxRequestXML()).post("/scripts/escape.xml",params);}return false;}</script>
--->
-
-<form id="escape" method="POST" action="https://www.the-art-of-web.com/javascript/escape/" accept-charset="UTF-8">
-<fieldset>
-<table border="0" cellpadding="3" cellspacing="0">
-<tbody><tr>
-<td style="vertical-align: top; text-align: right;"><b>INPUT:</b></td>
-<td><textarea required="" name="input" cols="36" rows="3"></textarea><br>
-<small>The function you select will be applied to the <b>INPUT</b> text and not to already encoded (or decoded) text below.</small></td>
-<td></td>
-</tr>
-<tr>
-<td style="vertical-align: top; text-align: right;"><input type="button" value="escape" onclick="output.value=escape(input.value);"></td>
-<td><textarea name="output" readonly="readonly" cols="36" rows="2"></textarea><br><small>JavaScript 1.0 - 1.4</small></td>
-<td><input type="button" value="unescape" onclick="output.value=unescape(input.value);"></td>
-</tr>
-<tr>
-<td style="vertical-align: top; text-align: right;"><input type="button" value="encodeURI" onclick="output2.value=encodeURI(input.value);"></td>
-<td><textarea name="output2" readonly="readonly" cols="36" rows="2"></textarea><br><small>JavaScript 1.5+</small></td>
-<td><input type="button" value="decodeURI" onclick="output2.value=decodeURI(input.value);"></td>
-</tr>
-<tr>
-<td style="vertical-align: top; text-align: right;"><input type="button" value="encodeURIComponent" onclick="output3.value=encodeURIComponent(input.value);"></td>
-<td><textarea name="output3" readonly="readonly" cols="36" rows="2"></textarea><br><small>JavaScript 1.5+</small></td>
-<td><input type="button" value="decodeURIComponent" onclick="output3.value=decodeURIComponent(input.value);"></td>
-</tr>
-<tr>
-<td style="vertical-align: top; text-align: right;"><input type="submit" value="URL Encode" onclick="return !(applyPHP(this.form, &#39;urlencode&#39;, &#39;encode&#39;));"></td>
-<td style="background-color: #ffc;"><textarea id="urlencode" readonly="readonly" cols="36" rows="2"></textarea><br>
-<small>PHP: <a href="http://www.php.net/urlencode" target="_blank">urlencode</a></small></td>
-<td><input type="submit" name="decode" value="URL Decode" onclick="return !(applyPHP(this.form, &#39;urlencode&#39;, &#39;decode&#39;));"></td>
-</tr>
-<tr>
-<td style="vertical-align: top; text-align: right;"><input type="submit" value="Raw URL Encode" onclick="return !(applyPHP(this.form, &#39;rawurlencode&#39;, &#39;encode&#39;));"></td>
-<td style="background-color: #ffc;"><textarea id="rawurlencode" readonly="readonly" cols="36" rows="2"></textarea><br>
-<small>PHP: <a href="http://www.php.net/rawurlencode" target="_blank">rawurlencode</a></small></td>
-<td><input type="submit" name="decode" value="Raw URL Decode" onclick="return !(applyPHP(this.form, &#39;rawurlencode&#39;, &#39;decode&#39;));"></td>
-</tr>
-<tr>
-<td style="vertical-align: top; text-align: right;"><input type="submit" value="HTML Entities" onclick="return !(applyPHP(this.form, &#39;htmlentities&#39;, &#39;encode&#39;));"></td>
-<td style="background-color: #ffc;"><textarea id="htmlentities" readonly="readonly" cols="36" rows="2"></textarea><br>
-<small>PHP: <a href="http://www.php.net/htmlentities" target="_blank">htmlentities</a></small></td>
-<td><input type="submit" name="decode" value="HTML Entity Decode" onclick="return !(applyPHP(this.form, &#39;htmlentities&#39;, &#39;decode&#39;));"></td>
-</tr>
-<tr>
-<td style="vertical-align: top; text-align: right;"><input type="submit" value="AddSlashes" onclick="return !(applyPHP(this.form, &#39;addslashes&#39;, &#39;encode&#39;));"></td>
-<td style="background-color: #ffc;"><textarea id="addslashes" readonly="readonly" cols="36" rows="2"></textarea><br>
-<small>PHP: <a href="http://www.php.net/addslashes" target="_blank">addslashes</a></small></td>
-<td><input type="submit" name="decode" value="StripSlashes" onclick="return !(applyPHP(this.form, &#39;addslashes&#39;, &#39;decode&#39;));"></td>
-</tr>
-<tr>
-<td style="vertical-align: top; text-align: right;"><input type="submit" value="UTF8 Encode" onclick="return !(applyPHP(this.form, &#39;utf8_encode&#39;, &#39;encode&#39;));"></td>
-<td style="background-color: #ffc;"><textarea id="utf8_encode" readonly="readonly" cols="36" rows="2"></textarea><br>
-<small>PHP: <a href="http://www.php.net/utf8_encode" target="_blank">utf8_encode</a></small></td>
-<td><input type="submit" name="decode" value="UTF8 Decode" onclick="return !(applyPHP(this.form, &#39;utf8_encode&#39;, &#39;decode&#39;));"></td>
-</tr>
-<tr>
-<td style="vertical-align: top; text-align: right;"><input type="submit" value="JSON Encode" onclick="return !(applyPHP(this.form, &#39;json_encode&#39;, &#39;encode&#39;));"></td>
-<td style="background-color: #ffc;"><textarea id="json_encode" readonly="readonly" cols="36" rows="2"></textarea><br>
-<small>PHP: <a href="http://www.php.net/json_encode" target="_blank">json_encode</a></small></td>
-<td><input type="submit" name="decode" value="JSON Decode" onclick="return !(applyPHP(this.form, &#39;json_encode&#39;, &#39;decode&#39;));"></td>
-</tr>
-</tbody></table>
-</fieldset>
-</form>
-
-<p>These functions perform replacements on certain characters as shown
-in the table futher down the page and described briefly here:</p>
-
-<ul class="spaced">
-  <li>The JavaScript <tt>escape</tt> function replaces most punctuation symbols with the equivalent <a href="https://www.the-art-of-web.com/html/character-codes/">hex-codes</a>, but was found to be inadequate when it came to UNICODE character encoding and has been superseded by the <tt>encodeURI</tt> function.</li>
-  <li>The <tt>encodeURIComponent</tt> function is an extension of encodeURI, the difference being that it also escapes the following characters: , / ? : @ &amp; = + $</li>
-  <li>On the PHP side of things, the only difference beween <tt>urlencode</tt> and <tt>rawurlencode</tt> is that the latter escapes the &lt;space&gt; character wheras urlencode uses the widely accepted <tt>+</tt> instead.</li>
-  <li>The <tt>htmlentities</tt> function escapes characters which have special meaning inside HTML by inserting HTML entities in their place (eg. &amp;amp; in place of &amp;).  See our article on <a href="https://www.the-art-of-web.com/html/character-codes/">ASCII Character Codes</a> for more details.</li>
-  <li>All functions have a complementary 'decode' function that pretty much does the opposite.</li>
-</ul>
 
 
 <h2 id="section_1">2. Escaping Double and Single Quotes</h2>
@@ -175,19 +96,6 @@ in the table futher down the page and described briefly here:</p>
 <p>Another essential PHP function that comes in handy when passing data
 to JavaScript is <a href="http://www.php.net/addslashes" target="_blank">addslashes</a> which will add a backslash before:
 backslashes, single- and double-quotes.</p>
-
-<p>For example, to echo a PHP variable into JavaScript code:</p>
-
-<code> ... onclick="return confirm('Delete this item: &lt;?PHP echo addslashes(htmlspecialchars($name)) ?&gt;?';" ...</code>
-
-<p>In the HTML we use double-quotes and in the JavaScript single-quotes,
-so any quotes within the JavaScript code will need to be escaped so that
-they don't conflict with either the HTML or JavaScript quotes.</p>
-
-<p>For more details on escaping PHP variables for use in JavaScript see
-our related article: <a href="https://www.the-art-of-web.com/php/javascript-escape/">Passing PHP
-variables to JavaScript</a>.</p>
-
 
 <h2 id="section_2">3. Table of encoded characters</h2>
 
@@ -199,294 +107,6 @@ to a range of common characters.</p>
 <td>Input</td>
 <td colspan="3">JavaScript</td>
 <td colspan="3" style="background-color: #ffc;">PHP</td>
-</tr>
-<tr>
-<th></th>
-<th style="text-align: center;">escape</th>
-<th style="text-align: center;">encodeURI</th>
-<th style="text-align: center;">encodeURIComponent</th>
-<th style="text-align: center;">urlencode</th>
-<th style="text-align: center;">rawurlencode</th>
-<th style="text-align: center;">htmlentities</th>
-</tr>
-<tr>
-<td>&lt;space&gt;</td>
-<td>%20</td>
-<td>%20</td>
-<td>%20</td>
-<td style="background-color: #ffc;">+</td>
-<td style="background-color: #ffc;">%20</td>
-<td style="background-color: #ffc;"> </td>
-</tr>
-<tr>
-<td>!</td>
-<td>%21</td>
-<td>!</td>
-<td>!</td>
-<td style="background-color: #ffc;">%21</td>
-<td style="background-color: #ffc;">%21</td>
-<td style="background-color: #ffc;">!</td>
-</tr>
-<tr>
-<td>@</td>
-<td>@</td>
-<td>@</td>
-<td>%40</td>
-<td style="background-color: #ffc;">%40</td>
-<td style="background-color: #ffc;">%40</td>
-<td style="background-color: #ffc;">@</td>
-</tr>
-<tr>
-<td>#</td>
-<td>%23</td>
-<td>#</td>
-<td>%23</td>
-<td style="background-color: #ffc;">%23</td>
-<td style="background-color: #ffc;">%23</td>
-<td style="background-color: #ffc;">#</td>
-</tr>
-<tr>
-<td>$</td>
-<td>%24</td>
-<td>$</td>
-<td>%24</td>
-<td style="background-color: #ffc;">%24</td>
-<td style="background-color: #ffc;">%24</td>
-<td style="background-color: #ffc;">$</td>
-</tr>
-<tr>
-<td>%</td>
-<td>%25</td>
-<td>%25</td>
-<td>%25</td>
-<td style="background-color: #ffc;">%25</td>
-<td style="background-color: #ffc;">%25</td>
-<td style="background-color: #ffc;">%</td>
-</tr>
-<tr>
-<td>^</td>
-<td>%5E</td>
-<td>%5E</td>
-<td>%5E</td>
-<td style="background-color: #ffc;">%5E</td>
-<td style="background-color: #ffc;">%5E</td>
-<td style="background-color: #ffc;">^</td>
-</tr>
-<tr>
-<td>&amp;</td>
-<td>%26</td>
-<td>&amp;</td>
-<td>%26</td>
-<td style="background-color: #ffc;">%26</td>
-<td style="background-color: #ffc;">%26</td>
-<td style="background-color: #ffc;">&amp;amp;</td>
-</tr>
-<tr>
-<td>*</td>
-<td>*</td>
-<td>*</td>
-<td>*</td>
-<td style="background-color: #ffc;">%2A</td>
-<td style="background-color: #ffc;">%2A</td>
-<td style="background-color: #ffc;">*</td>
-</tr>
-<tr>
-<td>(</td>
-<td>%28</td>
-<td>(</td>
-<td>(</td>
-<td style="background-color: #ffc;">%28</td>
-<td style="background-color: #ffc;">%28</td>
-<td style="background-color: #ffc;">(</td>
-</tr>
-<tr>
-<td>)</td>
-<td>%29</td>
-<td>)</td>
-<td>)</td>
-<td style="background-color: #ffc;">%29</td>
-<td style="background-color: #ffc;">%29</td>
-<td style="background-color: #ffc;">)</td>
-</tr>
-<tr>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td style="background-color: #ffc;">-</td>
-<td style="background-color: #ffc;">-</td>
-<td style="background-color: #ffc;">-</td>
-</tr>
-<tr>
-<td>_</td>
-<td>_</td>
-<td>_</td>
-<td>_</td>
-<td style="background-color: #ffc;">_</td>
-<td style="background-color: #ffc;">_</td>
-<td style="background-color: #ffc;">_</td>
-</tr>
-<tr>
-<td>=</td>
-<td>%3D</td>
-<td>=</td>
-<td>%3D</td>
-<td style="background-color: #ffc;">%3D</td>
-<td style="background-color: #ffc;">%3D</td>
-<td style="background-color: #ffc;">=</td>
-</tr>
-<tr>
-<td>+</td>
-<td>+</td>
-<td>+</td>
-<td>%2B</td>
-<td style="background-color: #ffc;">%2B</td>
-<td style="background-color: #ffc;">%2B</td>
-<td style="background-color: #ffc;">+</td>
-</tr>
-<tr>
-<td>:</td>
-<td>%3A</td>
-<td>:</td>
-<td>%3A</td>
-<td style="background-color: #ffc;">%3A</td>
-<td style="background-color: #ffc;">%3A</td>
-<td style="background-color: #ffc;">:</td>
-</tr>
-<tr>
-<td>;</td>
-<td>%3B</td>
-<td>;</td>
-<td>%3B</td>
-<td style="background-color: #ffc;">%3B</td>
-<td style="background-color: #ffc;">%3B;</td>
-<td style="background-color: #ffc;">;</td>
-</tr>
-<tr>
-<td>.</td>
-<td>.</td>
-<td>.</td>
-<td>.</td>
-<td style="background-color: #ffc;">.</td>
-<td style="background-color: #ffc;">.</td>
-<td style="background-color: #ffc;">.</td>
-</tr>
-<tr>
-<td>"</td>
-<td>%22</td>
-<td>%22</td>
-<td>%22</td>
-<td style="background-color: #ffc;">%22</td>
-<td style="background-color: #ffc;">%22</td>
-<td style="background-color: #ffc;">&amp;quot;</td>
-</tr>
-<tr>
-<td>'</td>
-<td>%27</td>
-<td>'</td>
-<td>'</td>
-<td style="background-color: #ffc;">%27</td>
-<td style="background-color: #ffc;">%27</td>
-<td style="background-color: #ffc;">'</td>
-</tr>
-<tr>
-<td>\</td>
-<td>%5C</td>
-<td>%5C</td>
-<td>%5C</td>
-<td style="background-color: #ffc;">%5C</td>
-<td style="background-color: #ffc;">%5C</td>
-<td style="background-color: #ffc;">\</td>
-</tr>
-<tr>
-<td>/</td>
-<td>/</td>
-<td>/</td>
-<td>%2F</td>
-<td style="background-color: #ffc;">%2F</td>
-<td style="background-color: #ffc;">%2F</td>
-<td style="background-color: #ffc;">/</td>
-</tr>
-<tr>
-<td>?</td>
-<td>%3F</td>
-<td>?</td>
-<td>%3F</td>
-<td style="background-color: #ffc;">%3F</td>
-<td style="background-color: #ffc;">%3F</td>
-<td style="background-color: #ffc;">?</td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td>%3C</td>
-<td>%3C</td>
-<td>%3C</td>
-<td style="background-color: #ffc;">%3C</td>
-<td style="background-color: #ffc;">%3C</td>
-<td style="background-color: #ffc;">&amp;lt;</td>
-</tr>
-<tr>
-<td>&gt;</td>
-<td>%3E</td>
-<td>%3E</td>
-<td>%3E</td>
-<td style="background-color: #ffc;">%3E</td>
-<td style="background-color: #ffc;">%3E</td>
-<td style="background-color: #ffc;">&amp;gt;</td>
-</tr>
-<tr>
-<td>~</td>
-<td>%7E</td>
-<td>~</td>
-<td>~</td>
-<td style="background-color: #ffc;">%7E</td>
-<td style="background-color: #ffc;">%7E</td>
-<td style="background-color: #ffc;">~</td>
-</tr>
-<tr>
-<td>[</td>
-<td>%5B</td>
-<td>%5B</td>
-<td>%5B</td>
-<td style="background-color: #ffc;">%5B</td>
-<td style="background-color: #ffc;">%5B</td>
-<td style="background-color: #ffc;">[</td>
-</tr>
-<tr>
-<td>]</td>
-<td>%5D</td>
-<td>%5D</td>
-<td>%5D</td>
-<td style="background-color: #ffc;">%5D</td>
-<td style="background-color: #ffc;">%5D</td>
-<td style="background-color: #ffc;">]</td>
-</tr>
-<tr>
-<td>{</td>
-<td>%7B</td>
-<td>%7B</td>
-<td>%7B</td>
-<td style="background-color: #ffc;">%7B</td>
-<td style="background-color: #ffc;">%7B</td>
-<td style="background-color: #ffc;">{</td>
-</tr>
-<tr>
-<td>}</td>
-<td>%7D</td>
-<td>%7D</td>
-<td>%7D</td>
-<td style="background-color: #ffc;">%7D</td>
-<td style="background-color: #ffc;">%7D</td>
-<td style="background-color: #ffc;">}</td>
-</tr>
-<tr>
-<td>`</td>
-<td>%60</td>
-<td>%60</td>
-<td>%60</td>
-<td style="background-color: #ffc;">%60</td>
-<td style="background-color: #ffc;">%60</td>
-<td style="background-color: #ffc;">`</td>
 </tr>
 </tbody></table>
 
@@ -509,62 +129,16 @@ document is 10 years old yet still applicable.</p>
 
 <div class="clear"></div>
 
-<ul id="share">
-  <li class="fbook"><a title="Share on Facebook" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.the-art-of-web.com%2Fjavascript%2Fescape%2F"><!-- --></a></li>
-  <li class="tweet"><a title="Tweet This" target="_blank" href="https://twitter.com/intent/tweet?text=JavaScript%3A+Escaping+Special+Characters&amp;url=http%3A%2F%2Fwww.the-art-of-web.com%2Fjavascript%2Fescape%2F&amp;via=theartofweb"></a></li>
-</ul>
-
-<!--
-<script>document.getElementById("share").addEventListener("touchstart",function(e){e.target.className="hover";},{passive:true});</script>
--->
 <!-- start feedback form -->
 <div id="feedback">
 <h4>Send a message to The Art of Web:</h4>
 
-<form id="feedback_form" method="POST" action="https://www.the-art-of-web.com/feedback.html" accept-charset="UTF-8">
-<input type="hidden" name="chirp\securetoken" value="8d005492da84eaaf1326c180c21478df">
-<input type="hidden" name="crypted" value="919a4c99bc323d594bcdeb2c74c7535dGfDuZAk=">
-<input type="hidden" name="timestamp" value="Thu, 09 Apr 2020 03:24:33 +1000">
-<p><label>Your Name<strong>*</strong><br>
-<input id="field_name" required="" type="text" size="48" name="name" value=""></label></p>
-<p><label>Email Address<strong>*</strong><br>
-<input id="field_email" type="email" required="" size="48" name="email" value=""></label><br>
-<small>used only for us to reply, and to display your <a tabindex="-1" href="https://en.gravatar.com/" target="_blank">gravatar</a>.</small></p>
-<p><label>Website<br>
-<input type="url" pattern="^https?://.+" size="48" name="website" value="" placeholder="http://"></label></p>
-<p><label>Message<strong>*</strong><br>
-<textarea id="field_message" name="message" required="" cols="48" rows="8"></textarea></label></p>
-<p><img class="captcha" style="background:url(data:image/png;base64,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) bottom" src="data:image/png;base64,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" alt=""></p>
-<p><label><a tabindex="-1" href="https://www.the-art-of-web.com/php/captcha/">CAPTCHA</a><strong>*</strong>: <input id="captcha_code" type="text" required="" pattern="\d{5}" name="captcha" size="8" maxlength="5"></label>
- <small>&lt;- copy the digits from the image into this box</small></p>
-<p><input type="submit" name="submit" value="Send Feedback"></p>
-</form>
-
-<p class="instruction">press &lt;Esc&gt; or click outside this box to close</p>
-
 </div> <!-- #feedback -->
 <h2 id="user_comments">5. User Comments</h2>
 
-<a class="post_comment show_feedback">Post your comment or question</a>
-
 <div id="comments">
-	<!--
-<div class="comment" data-hash="568f677623c630b0e9e3f5f5ac443ad3" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/568f677623c630b0e9e3f5f5ac443ad3.jpg?s=48&amp;d=mm&quot;);">
-	-->
-<p class="comment_author"><big itemprop="author">David Leader</big> <span class="comment_time" itemprop="dateCreated">18 April, 2013</span></p>
-<div itemprop="text"><p>Interesting that if you paste é (e-acute) into UTF8 Encode it gives you Ã©, but if you try to UTF8 decode this you get � (question mark in a diamond). Why?</p></div>
-<div class="response">
-<p>If you put Ã© in the INPUT box and use UTF8 Decode it returns to é (e-acute).  With é in the INPUT box you get � as it can't be decoded. <img src="./files/icon_cool.gif" width="15" height="15" border="0" alt=""></p>
 </div>
-</div>
-<!--
-<div class="comment" data-hash="e7906877e9e7348af47e129db6dfaa2a" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/e7906877e9e7348af47e129db6dfaa2a.jpg?s=48&amp;d=mm&quot;);">
-<p class="comment_author"><a href="http://www.siliconmeadow.net/" target="_blank" rel="nofollow"><big itemprop="author">Richard Sheppard</big></a> <span class="comment_time" itemprop="dateCreated">26 June, 2012</span></p>
-<div itemprop="text"><p>Thank you very much for posting this. Perhaps you might consider adding <a href="http://php.net/json-encode" target="_blank">json_encode</a>?</p></div>
--->
-<div class="response">
-<p>It's been added as an option now - the JSON functions didn't exist when the article was first written <img src="./js/icon_cool.gif" width="15" height="15" border="0" alt=""></p>
-</div>
+
 </div>
 </div>
 </div>
