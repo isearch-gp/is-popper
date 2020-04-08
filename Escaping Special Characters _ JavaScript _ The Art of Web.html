@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://www.the-art-of-web.com/javascript/escape/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width">
+  <title>Escaping Special Characters &lt; JavaScript | The Art of Web</title>
+  <meta name="description" content="A guide to escaping special characters in JavaScript and PHP.  Comparing JavaScript escape with PHP urlencode and rawurlencode.  Converting spaces, quotes and other entities.">
+  <meta name="keywords" content="javascript, escape, characters, special, escaping, character, punctuation, string, quote, encoding, alert, file, before, html, char">
+  <meta name="author" content="Chirp Internet">
+  <link rel="stylesheet" type="text/css" href="./Escaping Special Characters _ JavaScript _ The Art of Web_files/A.style.css+chirp_lightbox.css,Mcc.byaIVwn5AY.css.pagespeed.cf.6NCCtDzMiy.css">
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS: New and updated articles" href="https://www.the-art-of-web.com/rss.xml">
+<style type="text/css">:root td[valign="top"] > .mainmenu[style="padding:10px 0 0 0 !important;"], :root script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content, :root input[onclick^="window.open('http://www.friendlyduck.com/"], :root input[onclick^="window.open('http://www.FriendlyDuck.com/"], :root iframe[src^="http://static.mozo.com.au/strips/"], :root iframe[name^="google_ads_iframe"], :root iframe[id^="google_ads_iframe"], :root header#hdr + #main > div[data-hveid], :root div[role="navigation"] + c-wiz > div > .kxhcC, :root div[jscontroller="U835zd"] + c-wiz[jsrenderer="YnuqN"], :root div[itemtype="http://www.schema.org/WPAdBlock"], :root div[id^="zergnet-widget"], :root div[id^="yandex_ad"], :root div[id^="tms-ad-dfp-"], :root div[id^="q1-adset-"], :root div[id^="mainads"], :root div[id^="google_dfp_"], :root div[id^="google_ads_iframe_"], :root div[id^="dmRosAdWrapper"], :root div[id^="div_openx_ad_"], :root div[id^="div-adtech-ad-"], :root div[id^="div-ads-"], :root div[id^="dfp-ad-"], :root div[id^="crt-"][style], :root div[id^="cns_ads_"], :root div[id^="block-views-topheader-ad-block-"], :root div[class^="ResponsiveAd-"], :root div[id^="advads_"], :root .GJJKPX2N1 > .GJJKPX2M1 > .GJJKPX2P4, :root div[id^="advads-"], :root div[id^="adspot-"], :root div[id^="ads300_100-widget"], :root div[id^="ad_head_celtra_"], :root a[href^="http://www.mysuperpharm.com/"], :root div[id^="ad-server-"], :root div[id^="ad-position-"], :root a[href^="http://install.securewebsiteaccess.com/"], :root div[id^="YFBMSN"], :root div[data-role="sidebarAd"], :root a[href^="http://vo2.qrlsx.com/"], :root a[href^="http://www.terraclicks.com/"], :root div[data-native_ad], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root div[data-id^="CarouselPLA-"] > .kzwEHf, :root div[data-flt-ve="sponsored_search_ads"], :root .__yinit .__y_item, :root div[class^="local-feed-banner-ads"], :root div[class^="largeRectangleAd_"], :root a[href^="http://www.123-reg.co.uk/affiliate2.cgi"], :root div[class^="index_adBeforeContent_"], :root a[href^="http://www.paddypower.com/?AFF_ID="], :root a[href^="https://torguard.net/aff.php"], :root div[class^="block-openx-"], :root div[id^="lazyad-"], :root #rhs_block > ol > .rhsvw > .kp-blk > .xpdopen > ._OKe > ol > ._DJe > .luhb-div, :root div[class^="advertisement-desktop"], :root div[class^="SponsoredAds"], :root a[href^="http://www.fbooksluts.com/"], :root div[class^="Directory__footerAds"], :root a[href^="https://a.bestcontentpc.top/"], :root div[class*="-storyBodyAd-"], :root div[class$="dealnews"] > .dealnews, :root aside[itemtype="https://schema.org/WPAdBlock"], :root a[href^="http://bestorican.com/"], :root aside[id^="tn_ads_widget-"], :root div[itemtype="http://schema.org/WPAdBlock"], :root div[id^="ads300_600-widget"], :root aside[id^="div-gpt-ad"], :root a[href*=".orange2258.com/"], :root aside[id^="adrotate_widgets-"], :root amp-ad-custom, :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="http://affiliates.score-affiliates.com/"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root ad-desktop-sidebar, :root a[onclick*="//m.economictimes.com/etmack/click.htm"], :root a[href^="https://go.ad2up.com/"], :root a[href^="https://zononi.com/"], :root a[href^="https://www.what-sexdating.com/"], :root a[href^="https://www.travelzoo.com/oascampaignclick/"], :root a[href^="https://www.popads.net/users/"], :root a[href^="https://www.passeura.com/"], :root a[href^="https://www.oboom.com/ref/"], :root div[id^="div-gpt-ad"], :root a[href^="https://www.moscarossa.biz/"], :root DFP-AD, :root a[href^="https://www.incredimail.com/?id"], :root a[href^="https://www.iclwy.xyz/"], :root a[href^="https://freeadult.games/"], :root a[href^="https://www.hotgirls4fuck.com/"], :root .mw > #rcnt > #center_col > #taw > #tvcap > .c, :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="https://www.financeads.net/tc.php?"], :root a[href^="http://click.plista.com/pets"], :root a[href^="https://www.dsct1.com/"], :root a[href^="https://www.clicktraceclick.com/"], :root a[href^="https://www.camyou.com/?cam="][href*="&track="], :root a[href^="https://www.camsoda.com/enter.php?id="], :root a[href^="https://k2s.cc/pr/"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root a[href^="http://at.atwola.com/"], :root a[href^="https://www.bebi.com"], :root a[href^="http://tezfiles.com/pr/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://www.adskeeper.co.uk/"], :root a[href^="https://adsrv4k.com/"], :root div[data-spotim-slot], :root a[href^="https://windscribe.com/promo/"], :root a[href^="https://watchmygirlfriend.tv/"], :root a[href^="https://uncensored3d.com/"], :root a[href^="https://trust.zone/go/r.php?RID="], :root a[href^="https://trklvs.com/"], :root a[href^="http://www.socialsex.com/"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.trkinator.com/"], :root div[id^="ad_bigbox_"], :root div[class^="awpcp-random-ads"], :root a[href^="https://www.securegfm.com/"], :root a[href^="https://track.healthtrader.com/"], :root a[href^="https://track.afftck.com/"], :root a[href^="http://api.content.ad/"], :root a[href^="https://tour.mrskin.com/"], :root a[href^="http://dethao.com/"], :root div[class^="BlockAdvert-"], :root a[href^="http://mo8mwxi1.com/"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="http://www.firstload.de/affiliate/"], :root a[href^="http://6kup12tgxx.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="http://secure.signup-way.com/"], :root a[href^="https://syndication.exoclick.com/splash.php?"], :root a[href^="https://servedbyadbutler.com/"], :root a[href^="https://badoinkvr.com/"], :root div[id^="ADV-SLOT-"], :root div[class^="Ad__bigBox"], :root a[href*="/adServe/banners?"], :root a[href^="https://secure.bstlnk.com/"], :root a[href*="delivery.trafficfabrik.com"], :root a[href^="http://bc.vc/?r="], :root a[href^="https://retiremely.com/"], :root a[href^="http://tc.tradetracker.net/"] > img, :root a[href^="https://redirect.ero-advertising.com/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root div[class^="ad_position_"], :root a[href^="https://prf.hn/click/"][href*="/adref:"], :root a[href^="https://porngames.adult/?SID="], :root a[href^="https://www.nudeidols.com/cams/"], :root a[href^="http://www.uniblue.com/cm/"], :root a[href^="https://lingthatsparleso.info/"], :root a[href^="https://mk-cdn.net/"], :root a[href^="http://www.gamebookers.com/cgi-bin/intro.cgi?"], :root a[href^="https://mk-ads.com/"], :root a[href^="http://track.adform.net/"], :root a[href^="https://medleyads.com/"], :root a[href^="https://mcdlks.com/"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://land.rk.com/landing/"], :root div[id^="ad_script_"], :root a[href^="https://jmp.awempire.com/"], :root .GPMV2XEDA2 > .GPMV2XEDP1 > .GPMV2XEDJBB, :root div[class^="backfill-taboola-home-slot-"], :root a[href^="https://incisivetrk.cvtr.io/click?"], :root div[class^="Ad__adContainer"], :root a[href^="https://ilovemyfreedoms.com/"][href*="?affiliate_id="], :root a[href^="http://wopertific.info/"], :root a[href^="https://iactrivago.ampxdirect.com/"], :root div[class^="hp-ad-rect-"], :root a[href^="https://go.trkclick2.com/"], :root a[href^="https://go.stripchat.com/"][href*="&campaignId="], :root a[href^="https://go.onclasrv.com/"], :root a[href^="http://trk.mdrtrck.com/"], :root a[href^="https://googleads.g.doubleclick.net/pcs/click"], :root a[href^="https://farm.plista.com/pets"], :root a[href^="https://dltags.com/"], :root a[href^="http://servicegetbook.net/"], :root a[href^="https://dediseedbox.com/clients/aff.php?"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://chaturbate.com/affiliates/"], :root AD-TRIPLE-BOX, :root a[href^="https://bs.serving-sys.com"], :root a[href^="https://blackorange.go2cloud.org/"], :root a[onmousedown^="this.href='/wp-content/embed-ad-content/"], :root .GB3L-QEDGY .GB3L-QEDF- > .GB3L-QEDE-, :root a[href^="http://www.drowle.com/"], :root a[href^="https://chaturbate.jjgirls.com/"][href*="?tour="], :root a[href^="https://betway.com/"][href*="&a="], :root a[href^="https://awejmp.com/"], :root a[href^="http://syndication.exoclick.com/"], :root a[href^="https://awecrptjmp.com/"], :root a[href^="https://adultfriendfinder.com/go/page/landing"], :root a[href^="https://is.ltroute.com/"], :root a[href^="https://adserver.adreactor.com/"], :root a[href^="https://keep2share.cc/pr/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href^="https://ads.trafficpoizon.com/"], :root a[href^="https://ads.ad4game.com/"], :root a[href^="http://ads.affbuzzads.com/"], :root a[href^="https://m.do.co/c/"] > img, :root a[href^="http://record.betsafe.com/"], :root a[href^="https://awentw.com/"], :root a[href^="https://landing1.brazzersnetwork.com"], :root a[href^="https://ad13.adfarm1.adition.com/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://aaucwbe.com/"], :root a[href^="https://secure.cbdpure.com/aff/"], :root a[href^="https://a.adtng.com/"], :root a[href^="http://adexprt.me/"], :root a[href^="https://8a1ccf65f2b1302.com/"], :root a[href^="http://zevera.com/afi.html"], :root a[href^="http://yads.zedo.com/"], :root .inlineNewsletterSubscription + .inlineNewsletterSubscription div[class$="_item"], :root a[href^="http://xtgem.com/click?"], :root a[href^="http://wxdownloadmanager.com/dl/"], :root a[href^="https://content.oneindia.com/www/delivery/"], :root a[href^="http://www.yourfuckbook.com/?"], :root a[href^="http://www.zergnet.com/i/"], :root div[class^="proadszone-"], :root a[href^="http://www.xmediaserve.com/"], :root div[class^="AdEmbeded__AddWrapper"], :root a[href^="http://www.usearchmedia.com/signup?"], :root a[href^="http://adf.ly/?id="], :root a[href^="http://www.urmediazone.com/signup"], :root a[href^="https://affiliates.bet-at-home.com/processing/"], :root a[href^="http://ad.au.doubleclick.net/"], :root a[href^="http://www.torntv-downloader.com/"], :root .ra[align="right"][width="30%"], :root a[href^="http://www.tirerack.com/affiliates/"], :root a[href^="http://www.text-link-ads.com/"], :root a[href^="https://track.clickmoi.xyz/"], :root a[href^="http://www.streamtunerhd.com/signup?"], :root a[href^="//srv.buysellads.com/"], :root a[href^="https://deliver.ptgncdn.com/"], :root a[href^="//oardilin.com/"], :root a[href^="http://www.streamate.com/exports/"], :root a[target="_blank"][href^="http://api.taboola.com/"], :root a[href^="http://www.sfippa.com/"], :root a[href^="https://www.oboom.com/ad/"], :root a[href^="http://ad-apac.doubleclick.net/"], :root a[href^="http://www1.clickdownloader.com/"], :root .mod > ._jH + .rscontainer, :root #center_col > #main > .dfrd > .mnr-c > .c._oc._zs, :root a[href^="http://www.sex.com/videos/?utm_"], :root a[href^="http://www.sex.com/pics/?utm_"], :root a[href^="http://c.ketads.com/"], :root a[href^="http://duckcash.eu/"], :root a[href^="http://www.sex.com/?utm_"], :root a[href^="http://server.cpmstar.com/click.aspx?poolid="], :root a[href^="http://www.securegfm.com/"], :root #rhs_block .mod > .gws-local-hotels__booking-module, :root a[href^="http://www.roboform.com/php/land.php"], :root a[href^="http://www.richducks.com/"], :root a[href^="https://www.friendlyduck.com/AF_"], :root a[href^="https://squren.com/rotator/?atomid="], :root a[href^="http://www.revenuehits.com/"], :root a[href^="http://www.plus500.com/?id="], :root a[href^="http://go.mobisla.com/"], :root .trc_rbox_div .syndicatedItem, :root a[href^="https://secure.adnxs.com/clktrb?"], :root a[href^="http://www.pinkvisualpad.com/?revid="], :root a[href^="https://members.linkifier.com/public/affiliateLanding?refCode="], :root a[href^="http://www.pinkvisualgames.com/?revid="], :root aside[id^="advads_ad_widget-"], :root a[href^="https://topoffers.com/"][href*="/?pid="], :root a[href^="http://www.on2url.com/app/adtrack.asp"], :root a[href^="http://www.myvpn.pro/"], :root a[href^="http://www.myfreecams.com/?co_id="][href*="&track="], :root a[href^="http://www.my-dirty-hobby.com/?sub="], :root iframe[src*="mellowads.com"], :root a[href^="http://callville.xyz/"], :root a[href^="http://www.seekbang.com/cs/"], :root a[href^="http://bs.serving-sys.com/"], :root a[href^="http://www.menaon.com/installs/"], :root a[href^="http://adtransfer.net/"], :root a[href^="https://www.spyoff.com/"], :root a[href^="http://www.linkbucks.com/referral/"], :root a[href^="http://www.incredimail.com/?id="], :root a[href^="http://onclickads.net/"], :root a[href^="http://www.incredimail.com/?id"], :root a[href^="http://www.ragazzeinvendita.com/?rcid="], :root a[href^="http://www.graboid.com/affiliates/"], :root #cnt #center_col > #res > #topstuff > .ts, :root a[href^="http://www.getyourguide.com/?partner_id="], :root div[id^="adrotate_widgets-"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="http://www.friendlyadvertisements.com/"], :root div[id^="advt-"], :root a[href^="http://www.fpcTraffic2.com/blind/in.cgi?"], :root a[href^="http://www.fleshlight.com/"], :root a[href^="http://www.flashx.tv/downloadthis"], :root a[href^="http://www.firstload.com/affiliate/"], :root a[style="display:block;width:300px;min-height:250px"][href^="http://li.cnet.com/click?"], :root #MAIN.ShowTopic > .ad, :root a[href^="http://www.ducksnetwork.com/"], :root a[href^="https://click.plista.com/pets"], :root a[href*=".approvallamp.club/"], :root a[href^="http://www.downloadweb.org/"], :root div[class^="gemini-ad"], :root a[href^="http://secure.cbdpure.com/aff/"], :root a[href^="https://trafficmedia.center/"], :root a[href^="http://www.downloadthesefiles.com/"], :root a[href^="http://www.downloadplayer1.com/"], :root a[href*=".ichlnk.com/"], :root a[href^="http://www.myfreepaysite.com/sfw_int.php?aid"], :root a[href^="http://www.dealcent.com/register.php?affid="], :root a[href^="http://reallygoodlink.extremefreegames.com/"], :root a[href^="http://www.coinducks.com/"], :root a[href^="http://www.clkads.com/adServe/"], :root a[href^="https://chaturbate.xyz/"], :root a[href^="http://www.down1oads.com/"], :root a[href^="http://www.bitlord.me/share/"], :root a[href^="http://www.bet365.com/"][href*="&affiliate="], :root a[href^="http://fusionads.net"], :root a[href^="http://www.cash-duck.com/"], :root .trc_rbox_border_elm .syndicatedItem, :root a[href^="http://www.badoink.com/go.php?"], :root a[href^="http://www.babylon.com/welcome/index?affID"], :root a[href^="http://www.amazon.co.uk/exec/obidos/external-search?"], :root a[href^="http://www.afgr3.com/"], :root a[href^="http://www.afgr2.com/"], :root div[id^="drudge-column-ads-"], :root a[href^="http://www.adxpansion.com"], :root iframe[id^="google_ads_frame"], :root a[href^="http://www.greenmangaming.com/?tap_a="], :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"], :root a[href^="http://www.adskeeper.co.uk/"], :root a[href^="https://transfer.xe.com/signup/track/redirect?"], :root .mw > #rcnt > #center_col > #taw > .c, :root a[href^="https://sexdatingz.live/"], :root a[href^="http://wgpartner.com/"], :root a[href^="http://webtrackerplus.com/"], :root a[href^="http://webgirlz.online/landing/"], :root a[href^="http://web.adblade.com/"], :root a[href^="https://bullads.net/get/"], :root a[href^="https://adhealers.com/"], :root a[href^="http://www.duckcash.eu/"], :root a[href^="http://adserver.adreactor.com/"], :root a[href^="http://uploaded.net/ref/"], :root a[href*="//ridingintractable.com/"], :root a[href^="http://ad.doubleclick.net/"], :root a[href^="http://ul.to/ref/"], :root a[href^="https://understandsolar.com/signup/?lead_source="][href*="&tracking_code="], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://www.arthrozene.com/"][href*="?tid="], :root a[href^="http://tracking.toroadvertising.com/"], :root a[href^="http://track.trkvluum.com/"], :root a[href^="http://www.moneyducks.com/"], :root a[href^="https://intrev.co/"], :root a[href^="http://track.incognitovpn.com/"], :root a[href^="http://tour.mrskin.com/"], :root a[href^="http://tour.affbuzzads.com/"], :root [onclick^="window.open('window.open('//delivery.trafficfabrik.com/"], :root div[class^="lifeOnwerAd"], :root a[href^="http://t.wowtrk.com/"], :root a[href^="https://refpaano.host/"], :root a[href^="http://t.mdn2015x3.com/"], :root div[class^="AdhesionAd_"], :root a[href^="http://t.mdn2015x2.com/"], :root a[href^="http://srvpub.com/"], :root a[href^="http://www.friendlyquacks.com/"], :root a[href^="http://bluehost.com/track/"], :root a[href^="http://www.download-provider.org/"], :root a[href^="http://traffic.tc-clicks.com/"], :root a[href^="http://spygasm.com/track?"], :root a[href^="http://adserving.unibet.com/"], :root a[href^="http://www.cdjapan.co.jp/aff/click.cgi/"], :root a[href^="http://www.wantstraffic.com/"], :root a[href^="http://www.fducks.com/"], :root a[href^="https://uncensored.game/"], :root a[href^="http://secure.hostgator.com/~affiliat/"], :root a[href^="https://chaturbate.com/in/?track="], :root a[href^="http://searchtabnew.com/"], :root a[href^="http://vinfdv6b4j.com/"], :root a[href^="https://t.grtyi.com/"], :root a[href^="http://s5prou7ulr.com/"], :root AD-SLOT, :root #rhs_block > #mbEnd, :root a[href^="http://promos.bwin.com/"], :root a[href^="http://play4k.co/"], :root [onclick*="content.ad/"], :root a[href^="//4c7og3qcob.com/"], :root div[id^="ad-gpt-"], :root a[href^="http://partner.sbaffiliates.com/"], :root a[href^="https://spygasm.com/track?"], :root a[href^="http://papi.mynativeplatform.com:80/pub2/"], :root #cnt #center_col > #taw > #tvcap > .c._oc._Lp, :root a[href^="http://cdn.adstract.com/"], :root a[href^="http://buysellads.com/"], :root a[href^="http://n217adserv.com/"], :root a[href^="http://n.admagnet.net/"], :root a[href^="http://liversely.com/"], :root a[href^="http://secure.signup-page.com/"], :root a[href^="http://linksnappy.com/?ref="], :root a[href^="http://serve.williamhill.com/promoRedirect?"], :root a[href^="http://adsrv.keycaptcha.com"], :root a[href^="http://track.affiliatenetwork.co.za/"], :root a[href^="http://keep2share.cc/pr/"], :root .widget-pane-section-result[data-result-ad-type], :root a[href^="http://imads.integral-marketing.com/"], :root a[href^="http://guideways.info/"], :root a[href^="http://goldmoney.com/?gmrefcode="], :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > div > .vci, :root a[href^="http://go.trafficshop.com/"], :root a[href*=".adk2x.com/"], :root ADS-RIGHT, :root a[href^="http://go.seomojo.com/tracking202/"], :root #rhs_block > .ts[cellspacing="0"][cellpadding="0"][style="padding:0"], :root a[href^="http://go.oclaserver.com/"], :root bottomadblock, :root a[href^="http://go.ad2up.com/"], :root a[href^="http://galleries.securewebsiteaccess.com/"], :root a[href^="http://sharesuper.info/"], :root a[href^="http://fileloadr.com/"], :root a[href^="http://www.affiliates1128.com/processing/"], :root a[data-redirect^="this.href='http://paid.outbrain.com/network/redir?"], :root a[href^="http://ffxitrack.com/"], :root #rhswrapper > #rhssection[border="0"][bgcolor="#ffffff"], :root [id*="MGWrap"], :root a[href*="pussl3.com"], :root a[href^="https://track.52zxzh.com/"], :root a[href^="https://bnsjb1ab1e.com/"], :root a[href^="http://marketgid.com"], :root a[href^="http://feeds1.validclick.com/"], :root a[href^="http://feedads.g.doubleclick.net/"], :root a[href^="http://farm.plista.com/pets"], :root a[href^="http://www.clickansave.net/"], :root a[href^="http://extra.bet365.com/"][href*="?affiliate="], :root FBS-AD, :root a[href^="http://bodelen.com/"], :root a[href*=".fwd28.com/"], :root a[href^="http://ethfw0370q.com/"], :root a[href^="http://elitefuckbook.com/"], :root a[href^="http://eclkmpsa.com/"], :root a[href^="http://earandmarketing.com/"], :root a[href^="http://pan.adraccoon.com?"], :root a[href^="https://ads-for-free.com/click.php?"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="http://refer.webhostingbuzz.com/"], :root a[href^="//www.mgid.com/"], :root a[href^="https://flirtaescopa.com/"], :root a[href^="http://pokershibes.com/index.php?ref="], :root a[href^="http://aflrm.com/"], :root a[href^=" http://n47adshostnet.com/"], :root a[href^="http://wct.link/"], :root div[id^="ads300_250-widget"], :root a[href^="http://lp.ezdownloadpro.info/"], :root a[href^="http://dwn.pushtraffic.net/"], :root .GFYY1SVD2 > .GFYY1SVC2 > .GFYY1SVF5, :root img[alt^="Fuckbook"], :root a[href^="http://adrunnr.com/"], :root a[href^="http://lp.ncdownloader.com/"], :root a[href^="http://www.webtrackerplus.com/"], :root a[href^="http://download-performance.com/"], :root a[href^="http://down1oads.com/"], :root .Mpopup + #Mad > #MadZone, :root a[href^="http://refpa.top/"], :root a[href^="https://gghf.mobi/"], :root a[href*=".qertewrt.com/"], :root a[href^="http://dftrck.com/"], :root a[href^="http://databass.info/"], :root a[href^="http://www.firstclass-download.com/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root a[href^="http://hyperlinksecure.com/go/"], :root div > [class][onclick*=".updateAnalyticsEvents"], :root a[href^="https://gogoman.me/"], :root a[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"], :root a[href^="http://freesoftwarelive.com/"], :root a[href^="http://engine.newsmaxfeednetwork.com/"], :root a[href^="http://data.linoleictanzaniatitanic.com/"], :root a[href^="http://data.committeemenencyclopedicrepertory.info/"], :root a[href^="//awejmp.com/"], :root a[href^="http://d2.zedo.com/"], :root a[href^="http://igromir.info/"], :root a[href*="=exoclick"], :root a[href^="http://a63t9o1azf.com/"], :root a[href^="http://cpaway.afftrack.com/"], :root a[href^="http://clkmon.com/adServe/"], :root a[href^="http://clickserv.sitescout.com/"], :root a[href^="http://clickandjoinyourgirl.com/"], :root div[id^="div_ad_stack_"], :root a[href^="https://adswick.com/"], :root a[href^="http://allaptair.club/"], :root .ch[onclick="ga(this,event)"], :root a[href^="http://chaturbate.com/affiliates/"], :root a[href^="http://pubads.g.doubleclick.net/"], :root a[href^="https://ad.atdmt.com/"], :root a[href^="http://semi-cod.com/clicks/"], :root a[href^="http://centertrust.xyz/"], :root [href^="http://advertisesimple.info/"], :root a[href^="http://cdn3.adexprts.com/"], :root a[href^="http://www.easydownloadnow.com/"], :root div[data-ad-underplayer], :root a[href^="http://cdn3.adbrau.com/"], :root div[class^="ad_border_"], :root a[href^="//5e1fcb75b6d662d.com/"], :root a[href^="http://campaign.bharatmatrimony.com/cbstrack/"], :root div[id^="ad-cid-"], :root a[href^="http://cdn.adsrvmedia.net/"], :root a[href^="http://mgid.com/"], :root a[href^="http://cinema.friendscout24.de?"], :root a[href^="http://casino-x.com/?partner"], :root div[class^="ads-partner-"], :root a[href^="http://campaign.bharatmatrimony.com/track/"], :root AFS-AD, :root #center_col > #taw > #tvcap > .rscontainer, :root a[href^="http://contractallsticker.net/"], :root .commercial-unit-desktop-rhs > .iKidV > .Ee92ae + .P2mpm + .hp3sk, :root a[href^="http://c.jumia.io/"], :root a[href^="http://c.actiondesk.com/"], :root div[class^="AdBannerWrapper-"], :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href^="http://media.paddypower.com/redirect.aspx?"], :root a[href^="http://www.brightwheel.info/"], :root a[href^="http://betahit.click/"], :root [lazy-ad="leftthin_banner"], :root a[href*=".opskln.com/"], :root a[href^="https://rev.adsession.com/"], :root div[id^="acm-ad-tag-"], :root a[href^="http://tracking.deltamediallc.com/"], :root a[href^="http://azmobilestore.co/"], :root #assetsListings[style="display: block;"], :root a[href^="http://bestchickshere.com/"], :root a[href^="http://bcp.crwdcntrl.net/"], :root a[href^="https://porndeals.com/?track="], :root a[href^="http://finaljuyu.com/"], :root a[href^="http://adprovider.adlure.net/"], :root a[href^="http://banners.victor.com/processing/"], :root [src^="/Redirect.a2b?"], :root a[href^="https://playuhd.host/"], :root div[class*="_AdInArticle_"], :root a[href^="http://y1jxiqds7v.com/"], :root a[href^="http://taboola-"][href*="/redirect.php?app.type="], :root a[href*=".clksite.com/"], :root a[href^="http://b.bestcompleteusa.info/"], :root a[href*=".udncoeln.com/"], :root a[href^="http://aff.ironsocket.com/"], :root a[href^="http://www.ireel.com/signup?ref"], :root a[href^="https://www.firstload.com/affiliate/"], :root a[href^="http://adultgames.xxx/"], :root a[href^="http://s9kkremkr0.com/"], :root #content > #right > .dose > .dosesingle, :root a[href^="http://adserver.adtech.de/"], :root a[href^="http://rekoverr.com/"], :root a[href^="http://adtrackone.eu/"], :root div[id^="traffective-ad-"], :root a[href^="http://adtrack123.pl/"], :root a[href^="http://greensmoke.com/"], :root #flowplayer > div[style="position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px; z-index: 999;"], :root .vi-lb-placeholder[title="ADVERTISEMENT"], :root a[href^="http://join3.bannedsextapes.com/track/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"], :root a[href^="https://www.adxtro.com/"], :root a[href^="http://www.gfrevenge.com/landing/"], :root a[href^="http://adserver.adtechus.com/"], :root #center_col > #resultStats + #tads, :root a[href^="http://easydownload4you.com/"], :root a[href^="http://ads2.williamhill.com/redirect.aspx?"], :root a[href^="http://www.duckssolutions.com/"], :root a[href^="http://ads.betfair.com/redirect.aspx?"], :root a[href^="http://adlev.neodatagroup.com/"], :root a[href^="http://adfarm.mediaplex.com/"], :root [id^="adframe_wrap_"], :root a[href^="http://adclick.g.doubleclick.net/"], :root a[href^="http://www.freefilesdownloader.com/"], :root a[href^="https://mob1ledev1ces.com/"], :root a[href^="http://9nl.es/"], :root a[href^="http://affiliate.glbtracker.com/"], :root div[id^="proadszone-"], :root a[href^="http://record.sportsbetaffiliates.com.au/"], :root a[href^="http://anonymous-net.com/"], :root a[href^="http://ad.yieldmanager.com/"], :root a[href^="http://ad-emea.doubleclick.net/"], :root .ob_container .item-container-obpd, :root a[href^="http://click.payserve.com/"], :root #rhs_block .xpdopen > ._OKe > div > .mod > ._yYf, :root .rscontainer > .ellip, :root a[href^="http://a.adquantix.com/"], :root a[href^="http://googleads.g.doubleclick.net/pcs/click"], :root a[href^="http://ads.ad-center.com/"], :root div[id^="ads120_600-widget"], :root a[href^="http://fsoft4down.com/"], :root .__zinit .__y_item, :root a[href^="http://online.ladbrokes.com/promoRedirect?"], :root a[href^="http://4c7og3qcob.com/"], :root a[href^="http://www.hitcpm.com/"], :root a[href^="http://45eijvhgj2.com/"], :root a[href^="http://3wr110.net/"], :root div[class^="adbanner_"], :root a[href^="http://1phads.com/"], :root a[href^="https://fonts.fontplace9.com/"], :root a[href^="http://affiliate.coral.co.uk/processing/"], :root a[href^="//www.pd-news.com/"], :root a[href^="https://t.mobtya.com/"], :root a[href^="//voyeurhit.com/cs/"], :root a[href^="//pubads.g.doubleclick.net/"], :root a[href^="https://deliver.tf2www.com/"], :root a[href^="//porngames.adult/?SID="], :root a[href^="http://refpaano.host/"], :root a[href^="//zenhppyad.com/"], :root a[href^="//nlkdom.com/"], :root a[href^="//ads.ad-center.com/"], :root a[href*=".red90121.com/"], :root div[id^="sticky_ad_"], :root a[href^="//look.djfiln.com/"], :root a[href^="http://hpn.houzz.com/"], :root #mn #center_col > div > h2.spon:first-child, :root .plistaList > .plista_widget_underArticle_item[data-type="pet"], :root a[href^="//jsmptjmp.com/"], :root #mbEnd[cellspacing="0"][cellpadding="0"], :root a[href^="//healthaffiliate.center/"], :root a[href^="http://www.liutilities.com/"], :root a[href^="//go.onclasrv.com/"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="http://ads.sprintrade.com/"], :root a[href^="//z6naousb.com/"], :root a[href^="https://www.oneclickroot.com/?tap_a="] > img, :root a[href*="a2g-secure.com"], :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > .vci, :root #content > #center > .dose > .dosesingle, :root #\5f _mom_ad_12, :root a[href^="//db52cc91beabf7e8.com/"], :root a[href^="http://latestdownloads.net/download.php?"], :root .nrelate .nr_partner, :root [ad-id^="googlead"], :root a[href^="//bwnjijl7w.com/"], :root [id^="bunyad_ads_"], :root .trc_rbox .syndicatedItem, :root a[href^="http://cwcams.com/landing/click/"], :root a[href^="http://affiliates.pinnaclesports.com/processing/"], :root a[href^="http://get.slickvpn.com/"], :root a[href^="//api.ad-goi.com/"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root a[href^="//adbit.co/?a=Advertise&"], :root a[href^="//88d7b6aa44fb8eb.com/"], :root a[href^="http://tracker.mybroadband.co.za/"], :root a[href^="//4f6b2af479d337cf.com/"], :root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"], :root a[href^="https://dynamicadx.com/"], :root a[href^="//go.vedohd.org/"], :root a[href^="//40ceexln7929.com/"], :root a[href^="http://pwrads.net/"], :root a[href*="googleme.eu"], :root a[href^="//00ae8b5a9c1d597.com/"], :root a[href^="http://hd-plugins.com/download/"], :root a[href*="?adlivk="][href*="&refer="], :root a[href^="http://NowDownloadAll.com"], :root a[href^=" http://www.sex.com/"][href*="&utm_"], :root a[href*="onclkds."], :root div[id^="ad_rect_"], :root div[id^="adfox_"], :root a[href^="http://k2s.cc/code/"], :root .ra[width="30%"][align="right"] + table[width="70%"][cellpadding="0"], :root a[href*="//bongacams.com/track?"], :root a[data-oburl^="http://paid.outbrain.com/network/redir?"], :root a[href*="mfroute.com/"], :root a[href*=".smartadserver.com"], :root .rhsvw[style="background-color:#fff;margin:0 0 14px;padding-bottom:1px;padding-top:1px;"], :root #rhs_block > script + .c._oc._Ve.rhsvw, :root a[href*="emprestimo.eu"], :root div[id^="ad-div-"], :root a[href^="http://www.quick-torrent.com/download.html?aff"], :root a[href*="=Adtracker"], :root a[href*="/adrotate-out.php?"], :root a[href^="http://www.torntvdl.com/"], :root a[href^="http://hyperies.info/"], :root a[href^="http://amzn.to/"] > img[src^="data"], :root a[href*="//bongacams2.com/track?"], :root iframe[src^="http://ad.yieldmanager.com/"], :root a[href^="http://www.fonts.com/BannerScript/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href*="//3wr110.xyz/"], :root #center_col > div[style="font-size:14px;margin-right:0;min-height:5px"] > div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff8e7"], :root a[href^="https://tracking.truthfinder.com/?a="], :root a[href*=".purple6401.com/"], :root div[aria-label="Ads"], :root a[href^="http://landingpagegenius.com/"], :root a[href*=".irtyc.com/"], :root a[href*=".inclk.com/"], :root a[href^="http://codec.codecm.com/"], :root a[href^="http://us.marketgid.com"], :root a[href*=".clkcln.com/"], :root a[href*=".allsports4you.club"], :root a[href$="/vghd.shtml"], :root a[href^="http://popup.taboola.com/"], :root topadblock, :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://liversely.net/"], :root div[data-subscript="Advertising"], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://www.epicgameads.com/"], :root a[href^="http://cp.cbbp1.com"], :root #center_col > #taw > #tvcap > .cu-container > .commercial-unit-desktop-top, :root a[href^="https://meet-to-fuck.com/tds"], :root a[data-redirect^="http://click.plista.com/pets"], :root a[href^="http://stateresolver.link/"], :root a[href^="http://k2s.cc/pr/"], :root a[href^="https://www.pornhat.com/"][rel="nofollow"], :root [onclick^="window.open('https://www.brazzersnetwork.com/landing/"], :root #center_col > #resultStats + div[style="border:1px solid #dedede;margin-bottom:11px;padding:5px 7px 5px 6px"], :root a[href*=".intab.fun/"], :root #ads > .dose > .dosesingle, :root div[class^="index_displayAd_"], :root a[href^="http://www.1clickdownloader.com/"], :root [onclick^="window.open('http://adultfriendfinder.com/search/"], :root a[href^="http://www.sexgangsters.com/?pid="], :root [lazy-ad="leftbottom_banner"], :root a[href^="http://www.idownloadplay.com/"], :root .__ywl .__y_item, :root a[href*="deliver.trafficfabrik.com"], :root AMP-AD, :root .GHOFUQ5BG2 > .GHOFUQ5BF2 > .GHOFUQ5BG5, :root a[href^="https://djtcollectorclub.org/"][href*="?affiliate_id="], :root a[href^="https://chaturbate.com/in/?tour="], :root .GFYY1SVE2 > .GFYY1SVD2 > .GFYY1SVG5, :root a[href*=".trust.zone"], :root .trc_related_container div[data-item-syndicated="true"], :root [id*="MarketGid"], :root a[href^="http://ads.expekt.com/affiliates/"], :root a[href^="http://www.liversely.net/"], :root a[href^="http://websitedhoome.com/"], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href*="/cmd.php?ad="], :root a[href^="http://www.bet365.com/"][href*="?affiliate="], :root a[href^="http://mmo123.co/"], :root a[href^="http://www.TwinPlan.com/AF_"], :root .plistaList > .itemLinkPET, :root .rc-cta[data-target], :root [href^="https://maskip.co/"], :root a[href^="http://xads.zedo.com/"], :root a[data-redirect^="http://paid.outbrain.com/network/redir?"], :root a[href^="https://fileboom.me/pr/"], :root #center_col > #\5f Emc, :root [href*="//xml.revrtb.com/"], :root #center_col > #res > #topstuff + #search > div > #ires > #rso > #flun, :root div[class^="adpubs-"], :root a[href*="ad2upapp.com/"], :root .icons-rss-feed + .icons-rss-feed div[class$="_item"], :root a[href^="https://gamescarousel.com/"], :root .ra[align="left"][width="30%"], :root a[href^="http://9amq5z4y1y.com/"], :root a[href^="https://secure.eveonline.com/ft/?aid="], :root a[href^="http://www.bluehost.com/track/"] > img, :root a[data-nvp*="'trafficUrl':'https://paid.outbrain.com/network/redir?"], :root .mod > .gws-local-promotions__border, :root a[href^="http://www.mrskin.com/tour"], :root a[href^="http://bcntrack.com/"], :root .gbfwa > div[class$="_item"], :root div[id^="ads250_250-widget"], :root #topstuff > #tads, :root .jobs-information-call-to-action + .jobs-information-call-to-action div[class$="_item"], :root #resultspanel > #topads, :root ad-slot--header-banner, :root a[href^="http://www.myfreepaysite.com/sfw.php?aid"], :root a[href*="//bongacams5.com/track?"], :root a[href^="http://clicks.binarypromos.com/"], :root .trc_rbox_div a[target="_blank"][href^="http://tab"], :root div[class^="pane-google-admanager-"], :root a[href^="http://adultfriendfinder.com/p/register.cgi?pid="], :root a[href*=".revimedia.com/"], :root #ssmiwdiv[jsdisplay], :root .lads[width="100%"][style="background:#FFF8DD"], :root a[href^="http://360ads.go2cloud.org/"], :root a[href^="http://z1.zedo.com/"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root div[id^="dfp-slot-"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root .__y_elastic .__y_item, :root div[class^="index_adAfterContent_"], :root a[href^="//medleyads.com/spot/"], :root #tads + div + .c, :root a[href^="http://www.installads.net/"], :root #mn div[style="position:relative"] > #center_col > div > ._dPg, :root .GKJYXHBF2 > .GKJYXHBE2 > .GKJYXHBH5, :root div[class^="Ad__container"], :root #mn #center_col > div > h2.spon:first-child + ol:last-child, :root a[href^="https://iac.ampxdirect.com/"], :root a[href^="https://www.share-online.biz/affiliate/"], :root a[href*=".adsrv.eacdn.com/"] > img, :root div[id^="ad_position_"], :root div[data-mediatype="advertising"], :root a[href^="https://track.themadtrcker.com/"], :root a[href*=".bang.com/"][href*="&aff="], :root a[href^="https://control.trafficfabrik.com/"], :root a[href^="https://traffic.bannerator.com/"], :root a[href^="https://track.adform.net/"], :root #mn div[style="position:relative"] > #center_col > ._Ak, :root a[href^="https://clixtrac.com/"], :root a[href^="http://campeeks.com/"][href*="&utm_"], :root a[href^="http://www.affbuzzads.com/affiliate/"], :root .section-result[data-result-ad-type], :root .l-container > #fishtank, :root #flowplayer > div[style="z-index: 208; position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px;"], :root a[href^="http://www.twinplan.com/AF_"], :root a[href^="http://getlinksinaseconds.com/"], :root a[href^="http://espn.zlbu.net/"], :root a[href*="//promo-bc.com/track?"], :root p[id^="div-gpt-ad-"], :root #\5f _mom_ad_2, :root a[href^="https://horny-pussies.com/tds"], :root a[href^="https://americafirstpolls.com/"], :root a[href^="http://findersocket.com/"], :root a[href^="http://www.afco2go.com/srv.php?"], :root a[href*="/servlet/click/zone?"], :root [lazy-ad="top_banner"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root .__y_inner > .__y_item, :root a[href^="http://istri.it/?"], :root #main-content > [style="padding:10px 0 0 0 !important;"], :root a[href^="http://www.dl-provider.com/search/"], :root #atvcap + #tvcap > .mnr-c > .commercial-unit-mobile-top, :root a[href*="=adscript"], :root #main_col > #center_col div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff7ed"], :root [lazy-ad="lefttop_banner"], :root a[href^="http://intent.bingads.com/"], :root .__ywvr .__y_item, :root LEADERBOARD-AD, :root #header + #content > #left > #rlblock_left, :root [id*="ScriptRoot"], :root a[href^="http://g1.v.fwmrm.net/ad/"], :root #center_col > #taw > #tvcap > .commercial-unit-desktop-top, :root a[href*="5iclx7wa4q.com"], :root div[role="navigation"] + c-wiz > script + div > .kxhcC, :root a[href^="http://see-work.info/"], :root a[href^=" http://ads.ad-center.com/"], :root #rhs_block .mod > .luhb-div > div[data-async-type="updateHotelBookingModule"], :root #center_col > #resultStats + div + #res + #tads, :root a[href^="http://record.commissionking.com/"], :root a[href^="http://www.mobileandinternetadvertising.com/"], :root .trc_rbox_div .syndicatedItemUB, :root #taw > .med + div > #tvcap > .mnr-c:not(.qs-ic) > .commercial-unit-mobile-top, :root a[href^="https://trackjs.com/?utm_source"], :root a[href^="http://t.mdn2015x1.com/"], :root #center_col > #resultStats + #tads + #res + #tads, :root #\5f _admvnlb_modal_container, :root a[href^="http://connectlinking6.com/"], :root #\5f _nq__hh[style="display:block!important"], :root .plista_widget_belowArticleRelaunch_item[data-type="pet"] { display: none !important; }</style></head>
+
+<body>
+
+<!--htdig_noindex-->
+<a class="chirplink" accesskey="S" href="https://www.the-art-of-web.com/javascript/escape/#content">skip to content</a>
+<!--/htdig_noindex-->
+
+<header id="header">
+<a href="https://www.the-art-of-web.com/"><img src="./Escaping Special Characters _ JavaScript _ The Art of Web_files/banner-taow.png" width="737" height="87" alt="The Art of Web"></a>
+<!--htdig_noindex-->
+<nav id="menu" itemscope="" itemtype="http://schema.org/WebSite" class="menu">
+<meta itemprop="url" content="https://www.the-art-of-web.com/">
+<form id="searchbox" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction" method="POST" action="https://www.the-art-of-web.com/searchresult.html" accept-charset="UTF-8" onsubmit="return (words.value != &#39;&#39;);">
+<meta itemprop="target" content="https://www.the-art-of-web.com/searchresult.html?words={words}">
+<input id="sitesearch" itemprop="query-input" type="search" results="10" autosave="searches" name="words" placeholder="Search">
+<ul id="suggest"><li></li></ul>
+</form>
+<ul>
+  <li id="menu_trigger"><a href="https://www.the-art-of-web.com/javascript/escape/#">≡</a></li>
+  <li><a accesskey="1" href="https://www.the-art-of-web.com/">Home</a></li>
+  <li><a accesskey="2" href="https://www.the-art-of-web.com/html/">HTML</a></li>
+  <li><a accesskey="3" href="https://www.the-art-of-web.com/css/">CSS</a></li>
+  <li><a accesskey="4" href="https://www.the-art-of-web.com/javascript/">JavaScript</a></li>
+  <li><a accesskey="5" href="https://www.the-art-of-web.com/php/">PHP</a></li>
+  <li><a accesskey="6" href="https://www.the-art-of-web.com/sql/">SQL</a></li>
+  <li><a accesskey="7" href="https://www.the-art-of-web.com/system/">System</a></li>
+  <li><a accesskey="8" href="https://www.the-art-of-web.com/links/">Links</a></li>
+</ul>
+</nav>
+<!--/htdig_noindex-->
+</header>
+
+<aside id="rhs">
+<script async="" src="./Escaping Special Characters _ JavaScript _ The Art of Web_files/analytics.js" style="display: none !important;"></script><script async="" src="./Escaping Special Characters _ JavaScript _ The Art of Web_files/f.txt" style="display: none !important;"></script>
+<!-- The Art of Web - RWD Top -->
+<ins class="adsbygoogle" style="display: none !important;" data-ad-client="ca-pub-9789897350102210" data-ad-slot="8956648230" data-ad-format="auto"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</aside>
+
+<main id="content">
+<!--htdig_noindex-->
+<aside id="ad_content" class="noprint" style="display: none !important;">
+<script async="" src="./Escaping Special Characters _ JavaScript _ The Art of Web_files/f.txt" style="display: none !important;"></script>
+<!-- The Art of Web - RWD Content -->
+<ins class="adsbygoogle" style="display: none !important;" data-ad-client="ca-pub-9789897350102210" data-ad-slot="1433381437" data-ad-format="auto"></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</aside>
+
+<div id="submenu" class=""><ol><li id="submenu_trigger" class="mobileonly"><a href="https://www.the-art-of-web.com/javascript/escape/#">☰ Submenu</a></li><li><a href="https://www.the-art-of-web.com/javascript/escape/#section_0">Encoding and decoding using JavaScript and PHP</a></li><li><a href="https://www.the-art-of-web.com/javascript/escape/#section_1">Escaping Double and Single Quotes</a></li><li><a href="https://www.the-art-of-web.com/javascript/escape/#section_2">Table of encoded characters</a></li><li><a href="https://www.the-art-of-web.com/javascript/escape/#section_3">References</a></li><li><a href="https://www.the-art-of-web.com/javascript/escape/#user_comments">User Comments</a></li></ol></div>
+<!--/htdig_noindex-->
+
+<h1><span class="nomobile">JavaScript: </span>Escaping Special Characters</h1>
+
+<p class="social_counters"><a class="tweets" title="Share on Twitter" target="_blank" href="https://twitter.com/intent/tweet?text=Escaping+Special+Characters:&amp;url=https%3A%2F%2Fwww.the-art-of-web.com%2Fjavascript%2Fescape%2F&amp;via=theartofweb"><span>&nbsp;<span>Tweet</span></span></a><a class="likes" title="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.the-art-of-web.com%2Fjavascript%2Fescape%2F"><span>3<span> Shares</span></span></a><a class="reddit" title="Post to Reddit" target="_blank" href="http://www.reddit.com/submit?title=Escaping+Special+Characters&amp;url=https%3A%2F%2Fwww.the-art-of-web.com%2Fjavascript%2Fescape%2F"><span>0<span> Tweets</span></span></a><a class="feedback" title="User Commentc" href="https://www.the-art-of-web.com/javascript/escape/#user_comments"><span>12<span> Comments</span></span></a></p>
+
+
+<p>Every programming language has it's special characters - characters 
+that mean something special such as identifying a variable, the end of a 
+line or a break in some data.  JavaScript is no different, so it 
+provides a number of functions that encode and decode special 
+characters.</p>
+
+<p>If you're interacting between PHP and JavaScript you will also need 
+to be familiar with the PHP functions for encoding and decoding special 
+characters, which is why we've created this special tool for testing and 
+comparing different functions.</p>
+
+
+<h2 id="section_0">1. Encoding and decoding using JavaScript and PHP</h2>
+
+<p>The form below let's you see the output of various functions that are
+used to <b>encode</b> special characters when they appear in plain text
+or URL parameters (following the '?' in a URL).  This page calls the PHP
+functions directly <a href="https://www.the-art-of-web.com/javascript/ajax-race-condition/">using
+Ajax</a> rather than a JavaScript emulation.  If you have a string to
+<b>decode</b>, use the buttons on the right instead.</p>
+
+<script type="text/javascript" src="./Escaping Special Characters _ JavaScript _ The Art of Web_files/AjaxRequestXML.js.pagespeed.jm.9KC4un9F8a.js"></script>
+<script type="text/javascript">function applyPHP(form,target,method){if(encodeURIComponent){var params={"q":form.input.value,"target":target,"method":method}
+return(new AjaxRequestXML()).post("/scripts/escape.xml",params);}return false;}</script>
+
+<form id="escape" method="POST" action="https://www.the-art-of-web.com/javascript/escape/" accept-charset="UTF-8">
+<fieldset>
+<table border="0" cellpadding="3" cellspacing="0">
+<tbody><tr>
+<td style="vertical-align: top; text-align: right;"><b>INPUT:</b></td>
+<td><textarea required="" name="input" cols="36" rows="3"></textarea><br>
+<small>The function you select will be applied to the <b>INPUT</b> text and not to already encoded (or decoded) text below.</small></td>
+<td></td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: right;"><input type="button" value="escape" onclick="output.value=escape(input.value);"></td>
+<td><textarea name="output" readonly="readonly" cols="36" rows="2"></textarea><br><small>JavaScript 1.0 - 1.4</small></td>
+<td><input type="button" value="unescape" onclick="output.value=unescape(input.value);"></td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: right;"><input type="button" value="encodeURI" onclick="output2.value=encodeURI(input.value);"></td>
+<td><textarea name="output2" readonly="readonly" cols="36" rows="2"></textarea><br><small>JavaScript 1.5+</small></td>
+<td><input type="button" value="decodeURI" onclick="output2.value=decodeURI(input.value);"></td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: right;"><input type="button" value="encodeURIComponent" onclick="output3.value=encodeURIComponent(input.value);"></td>
+<td><textarea name="output3" readonly="readonly" cols="36" rows="2"></textarea><br><small>JavaScript 1.5+</small></td>
+<td><input type="button" value="decodeURIComponent" onclick="output3.value=decodeURIComponent(input.value);"></td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: right;"><input type="submit" value="URL Encode" onclick="return !(applyPHP(this.form, &#39;urlencode&#39;, &#39;encode&#39;));"></td>
+<td style="background-color: #ffc;"><textarea id="urlencode" readonly="readonly" cols="36" rows="2"></textarea><br>
+<small>PHP: <a href="http://www.php.net/urlencode" target="_blank">urlencode</a></small></td>
+<td><input type="submit" name="decode" value="URL Decode" onclick="return !(applyPHP(this.form, &#39;urlencode&#39;, &#39;decode&#39;));"></td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: right;"><input type="submit" value="Raw URL Encode" onclick="return !(applyPHP(this.form, &#39;rawurlencode&#39;, &#39;encode&#39;));"></td>
+<td style="background-color: #ffc;"><textarea id="rawurlencode" readonly="readonly" cols="36" rows="2"></textarea><br>
+<small>PHP: <a href="http://www.php.net/rawurlencode" target="_blank">rawurlencode</a></small></td>
+<td><input type="submit" name="decode" value="Raw URL Decode" onclick="return !(applyPHP(this.form, &#39;rawurlencode&#39;, &#39;decode&#39;));"></td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: right;"><input type="submit" value="HTML Entities" onclick="return !(applyPHP(this.form, &#39;htmlentities&#39;, &#39;encode&#39;));"></td>
+<td style="background-color: #ffc;"><textarea id="htmlentities" readonly="readonly" cols="36" rows="2"></textarea><br>
+<small>PHP: <a href="http://www.php.net/htmlentities" target="_blank">htmlentities</a></small></td>
+<td><input type="submit" name="decode" value="HTML Entity Decode" onclick="return !(applyPHP(this.form, &#39;htmlentities&#39;, &#39;decode&#39;));"></td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: right;"><input type="submit" value="AddSlashes" onclick="return !(applyPHP(this.form, &#39;addslashes&#39;, &#39;encode&#39;));"></td>
+<td style="background-color: #ffc;"><textarea id="addslashes" readonly="readonly" cols="36" rows="2"></textarea><br>
+<small>PHP: <a href="http://www.php.net/addslashes" target="_blank">addslashes</a></small></td>
+<td><input type="submit" name="decode" value="StripSlashes" onclick="return !(applyPHP(this.form, &#39;addslashes&#39;, &#39;decode&#39;));"></td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: right;"><input type="submit" value="UTF8 Encode" onclick="return !(applyPHP(this.form, &#39;utf8_encode&#39;, &#39;encode&#39;));"></td>
+<td style="background-color: #ffc;"><textarea id="utf8_encode" readonly="readonly" cols="36" rows="2"></textarea><br>
+<small>PHP: <a href="http://www.php.net/utf8_encode" target="_blank">utf8_encode</a></small></td>
+<td><input type="submit" name="decode" value="UTF8 Decode" onclick="return !(applyPHP(this.form, &#39;utf8_encode&#39;, &#39;decode&#39;));"></td>
+</tr>
+<tr>
+<td style="vertical-align: top; text-align: right;"><input type="submit" value="JSON Encode" onclick="return !(applyPHP(this.form, &#39;json_encode&#39;, &#39;encode&#39;));"></td>
+<td style="background-color: #ffc;"><textarea id="json_encode" readonly="readonly" cols="36" rows="2"></textarea><br>
+<small>PHP: <a href="http://www.php.net/json_encode" target="_blank">json_encode</a></small></td>
+<td><input type="submit" name="decode" value="JSON Decode" onclick="return !(applyPHP(this.form, &#39;json_encode&#39;, &#39;decode&#39;));"></td>
+</tr>
+</tbody></table>
+</fieldset>
+</form>
+
+<p>These functions perform replacements on certain characters as shown
+in the table futher down the page and described briefly here:</p>
+
+<ul class="spaced">
+  <li>The JavaScript <tt>escape</tt> function replaces most punctuation symbols with the equivalent <a href="https://www.the-art-of-web.com/html/character-codes/">hex-codes</a>, but was found to be inadequate when it came to UNICODE character encoding and has been superseded by the <tt>encodeURI</tt> function.</li>
+  <li>The <tt>encodeURIComponent</tt> function is an extension of encodeURI, the difference being that it also escapes the following characters: , / ? : @ &amp; = + $</li>
+  <li>On the PHP side of things, the only difference beween <tt>urlencode</tt> and <tt>rawurlencode</tt> is that the latter escapes the &lt;space&gt; character wheras urlencode uses the widely accepted <tt>+</tt> instead.</li>
+  <li>The <tt>htmlentities</tt> function escapes characters which have special meaning inside HTML by inserting HTML entities in their place (eg. &amp;amp; in place of &amp;).  See our article on <a href="https://www.the-art-of-web.com/html/character-codes/">ASCII Character Codes</a> for more details.</li>
+  <li>All functions have a complementary 'decode' function that pretty much does the opposite.</li>
+</ul>
+
+
+<h2 id="section_1">2. Escaping Double and Single Quotes</h2>
+
+<p>Another essential PHP function that comes in handy when passing data
+to JavaScript is <a href="http://www.php.net/addslashes" target="_blank">addslashes</a> which will add a backslash before:
+backslashes, single- and double-quotes.</p>
+
+<p>For example, to echo a PHP variable into JavaScript code:</p>
+
+<code> ... onclick="return confirm('Delete this item: &lt;?PHP echo addslashes(htmlspecialchars($name)) ?&gt;?';" ...</code>
+
+<p>In the HTML we use double-quotes and in the JavaScript single-quotes,
+so any quotes within the JavaScript code will need to be escaped so that
+they don't conflict with either the HTML or JavaScript quotes.</p>
+
+<p>For more details on escaping PHP variables for use in JavaScript see
+our related article: <a href="https://www.the-art-of-web.com/php/javascript-escape/">Passing PHP
+variables to JavaScript</a>.</p>
+
+
+<h2 id="section_2">3. Table of encoded characters</h2>
+
+<p>Here you can see how the various JavaScript and PHP functions apply
+to a range of common characters.</p>
+
+<table class="collapse" style="text-align: center;" width="100%">
+<tbody><tr>
+<td>Input</td>
+<td colspan="3">JavaScript</td>
+<td colspan="3" style="background-color: #ffc;">PHP</td>
+</tr>
+<tr>
+<th></th>
+<th style="text-align: center;">escape</th>
+<th style="text-align: center;">encodeURI</th>
+<th style="text-align: center;">encodeURIComponent</th>
+<th style="text-align: center;">urlencode</th>
+<th style="text-align: center;">rawurlencode</th>
+<th style="text-align: center;">htmlentities</th>
+</tr>
+<tr>
+<td>&lt;space&gt;</td>
+<td>%20</td>
+<td>%20</td>
+<td>%20</td>
+<td style="background-color: #ffc;">+</td>
+<td style="background-color: #ffc;">%20</td>
+<td style="background-color: #ffc;"> </td>
+</tr>
+<tr>
+<td>!</td>
+<td>%21</td>
+<td>!</td>
+<td>!</td>
+<td style="background-color: #ffc;">%21</td>
+<td style="background-color: #ffc;">%21</td>
+<td style="background-color: #ffc;">!</td>
+</tr>
+<tr>
+<td>@</td>
+<td>@</td>
+<td>@</td>
+<td>%40</td>
+<td style="background-color: #ffc;">%40</td>
+<td style="background-color: #ffc;">%40</td>
+<td style="background-color: #ffc;">@</td>
+</tr>
+<tr>
+<td>#</td>
+<td>%23</td>
+<td>#</td>
+<td>%23</td>
+<td style="background-color: #ffc;">%23</td>
+<td style="background-color: #ffc;">%23</td>
+<td style="background-color: #ffc;">#</td>
+</tr>
+<tr>
+<td>$</td>
+<td>%24</td>
+<td>$</td>
+<td>%24</td>
+<td style="background-color: #ffc;">%24</td>
+<td style="background-color: #ffc;">%24</td>
+<td style="background-color: #ffc;">$</td>
+</tr>
+<tr>
+<td>%</td>
+<td>%25</td>
+<td>%25</td>
+<td>%25</td>
+<td style="background-color: #ffc;">%25</td>
+<td style="background-color: #ffc;">%25</td>
+<td style="background-color: #ffc;">%</td>
+</tr>
+<tr>
+<td>^</td>
+<td>%5E</td>
+<td>%5E</td>
+<td>%5E</td>
+<td style="background-color: #ffc;">%5E</td>
+<td style="background-color: #ffc;">%5E</td>
+<td style="background-color: #ffc;">^</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>%26</td>
+<td>&amp;</td>
+<td>%26</td>
+<td style="background-color: #ffc;">%26</td>
+<td style="background-color: #ffc;">%26</td>
+<td style="background-color: #ffc;">&amp;amp;</td>
+</tr>
+<tr>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td>*</td>
+<td style="background-color: #ffc;">%2A</td>
+<td style="background-color: #ffc;">%2A</td>
+<td style="background-color: #ffc;">*</td>
+</tr>
+<tr>
+<td>(</td>
+<td>%28</td>
+<td>(</td>
+<td>(</td>
+<td style="background-color: #ffc;">%28</td>
+<td style="background-color: #ffc;">%28</td>
+<td style="background-color: #ffc;">(</td>
+</tr>
+<tr>
+<td>)</td>
+<td>%29</td>
+<td>)</td>
+<td>)</td>
+<td style="background-color: #ffc;">%29</td>
+<td style="background-color: #ffc;">%29</td>
+<td style="background-color: #ffc;">)</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td style="background-color: #ffc;">-</td>
+<td style="background-color: #ffc;">-</td>
+<td style="background-color: #ffc;">-</td>
+</tr>
+<tr>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+<td>_</td>
+<td style="background-color: #ffc;">_</td>
+<td style="background-color: #ffc;">_</td>
+<td style="background-color: #ffc;">_</td>
+</tr>
+<tr>
+<td>=</td>
+<td>%3D</td>
+<td>=</td>
+<td>%3D</td>
+<td style="background-color: #ffc;">%3D</td>
+<td style="background-color: #ffc;">%3D</td>
+<td style="background-color: #ffc;">=</td>
+</tr>
+<tr>
+<td>+</td>
+<td>+</td>
+<td>+</td>
+<td>%2B</td>
+<td style="background-color: #ffc;">%2B</td>
+<td style="background-color: #ffc;">%2B</td>
+<td style="background-color: #ffc;">+</td>
+</tr>
+<tr>
+<td>:</td>
+<td>%3A</td>
+<td>:</td>
+<td>%3A</td>
+<td style="background-color: #ffc;">%3A</td>
+<td style="background-color: #ffc;">%3A</td>
+<td style="background-color: #ffc;">:</td>
+</tr>
+<tr>
+<td>;</td>
+<td>%3B</td>
+<td>;</td>
+<td>%3B</td>
+<td style="background-color: #ffc;">%3B</td>
+<td style="background-color: #ffc;">%3B;</td>
+<td style="background-color: #ffc;">;</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td>.</td>
+<td style="background-color: #ffc;">.</td>
+<td style="background-color: #ffc;">.</td>
+<td style="background-color: #ffc;">.</td>
+</tr>
+<tr>
+<td>"</td>
+<td>%22</td>
+<td>%22</td>
+<td>%22</td>
+<td style="background-color: #ffc;">%22</td>
+<td style="background-color: #ffc;">%22</td>
+<td style="background-color: #ffc;">&amp;quot;</td>
+</tr>
+<tr>
+<td>'</td>
+<td>%27</td>
+<td>'</td>
+<td>'</td>
+<td style="background-color: #ffc;">%27</td>
+<td style="background-color: #ffc;">%27</td>
+<td style="background-color: #ffc;">'</td>
+</tr>
+<tr>
+<td>\</td>
+<td>%5C</td>
+<td>%5C</td>
+<td>%5C</td>
+<td style="background-color: #ffc;">%5C</td>
+<td style="background-color: #ffc;">%5C</td>
+<td style="background-color: #ffc;">\</td>
+</tr>
+<tr>
+<td>/</td>
+<td>/</td>
+<td>/</td>
+<td>%2F</td>
+<td style="background-color: #ffc;">%2F</td>
+<td style="background-color: #ffc;">%2F</td>
+<td style="background-color: #ffc;">/</td>
+</tr>
+<tr>
+<td>?</td>
+<td>%3F</td>
+<td>?</td>
+<td>%3F</td>
+<td style="background-color: #ffc;">%3F</td>
+<td style="background-color: #ffc;">%3F</td>
+<td style="background-color: #ffc;">?</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>%3C</td>
+<td>%3C</td>
+<td>%3C</td>
+<td style="background-color: #ffc;">%3C</td>
+<td style="background-color: #ffc;">%3C</td>
+<td style="background-color: #ffc;">&amp;lt;</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>%3E</td>
+<td>%3E</td>
+<td>%3E</td>
+<td style="background-color: #ffc;">%3E</td>
+<td style="background-color: #ffc;">%3E</td>
+<td style="background-color: #ffc;">&amp;gt;</td>
+</tr>
+<tr>
+<td>~</td>
+<td>%7E</td>
+<td>~</td>
+<td>~</td>
+<td style="background-color: #ffc;">%7E</td>
+<td style="background-color: #ffc;">%7E</td>
+<td style="background-color: #ffc;">~</td>
+</tr>
+<tr>
+<td>[</td>
+<td>%5B</td>
+<td>%5B</td>
+<td>%5B</td>
+<td style="background-color: #ffc;">%5B</td>
+<td style="background-color: #ffc;">%5B</td>
+<td style="background-color: #ffc;">[</td>
+</tr>
+<tr>
+<td>]</td>
+<td>%5D</td>
+<td>%5D</td>
+<td>%5D</td>
+<td style="background-color: #ffc;">%5D</td>
+<td style="background-color: #ffc;">%5D</td>
+<td style="background-color: #ffc;">]</td>
+</tr>
+<tr>
+<td>{</td>
+<td>%7B</td>
+<td>%7B</td>
+<td>%7B</td>
+<td style="background-color: #ffc;">%7B</td>
+<td style="background-color: #ffc;">%7B</td>
+<td style="background-color: #ffc;">{</td>
+</tr>
+<tr>
+<td>}</td>
+<td>%7D</td>
+<td>%7D</td>
+<td>%7D</td>
+<td style="background-color: #ffc;">%7D</td>
+<td style="background-color: #ffc;">%7D</td>
+<td style="background-color: #ffc;">}</td>
+</tr>
+<tr>
+<td>`</td>
+<td>%60</td>
+<td>%60</td>
+<td>%60</td>
+<td style="background-color: #ffc;">%60</td>
+<td style="background-color: #ffc;">%60</td>
+<td style="background-color: #ffc;">`</td>
+</tr>
+</tbody></table>
+
+<p>The <a href="http://www.ietf.org/rfc/rfc1738.txt" target="_blank">RFC
+1738</a> specifications make fascinating reading - considering that the
+document is 10 years old yet still applicable.</p>
+
+
+<h2 id="section_3">4. References</h2>
+
+<ul>
+  <li><a href="http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Guide:Functions" target="_blank">Core JavaScript Guide 1.5: Functions</a></li>
+  <li><a href="http://blogs.bwerp.net/archives/2004/08/27/escaping" target="_blank">Escaping JavaScript for PHP</a></li>
+</ul>
+
+
+<p><a href="https://www.the-art-of-web.com/javascript/">&lt; JavaScript</a></p>
+
+<script type="text/javascript">(function(){var arr=document.getElementById("escape").getElementsByTagName("textarea");for(var i=1;i<arr.length;i++){arr[i].addEventListener("click",function(){if(this.value){this.focus();this.select();}});}}());</script>
+
+<div class="clear"></div>
+
+<ul id="share">
+  <li class="fbook"><a title="Share on Facebook" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.the-art-of-web.com%2Fjavascript%2Fescape%2F"><!-- --></a></li>
+  <li class="tweet"><a title="Tweet This" target="_blank" href="https://twitter.com/intent/tweet?text=JavaScript%3A+Escaping+Special+Characters&amp;url=http%3A%2F%2Fwww.the-art-of-web.com%2Fjavascript%2Fescape%2F&amp;via=theartofweb"></a></li>
+</ul>
+
+<script>document.getElementById("share").addEventListener("touchstart",function(e){e.target.className="hover";},{passive:true});</script>
+<!-- start feedback form -->
+<div id="feedback">
+<h4>Send a message to The Art of Web:</h4>
+
+<form id="feedback_form" method="POST" action="https://www.the-art-of-web.com/feedback.html" accept-charset="UTF-8">
+<input type="hidden" name="chirp\securetoken" value="8d005492da84eaaf1326c180c21478df">
+<input type="hidden" name="crypted" value="919a4c99bc323d594bcdeb2c74c7535dGfDuZAk=">
+<input type="hidden" name="timestamp" value="Thu, 09 Apr 2020 03:24:33 +1000">
+<p><label>Your Name<strong>*</strong><br>
+<input id="field_name" required="" type="text" size="48" name="name" value=""></label></p>
+<p><label>Email Address<strong>*</strong><br>
+<input id="field_email" type="email" required="" size="48" name="email" value=""></label><br>
+<small>used only for us to reply, and to display your <a tabindex="-1" href="https://en.gravatar.com/" target="_blank">gravatar</a>.</small></p>
+<p><label>Website<br>
+<input type="url" pattern="^https?://.+" size="48" name="website" value="" placeholder="http://"></label></p>
+<p><label>Message<strong>*</strong><br>
+<textarea id="field_message" name="message" required="" cols="48" rows="8"></textarea></label></p>
+<p><img class="captcha" style="background:url(data:image/png;base64,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) bottom" src="data:image/png;base64,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" alt=""></p>
+<p><label><a tabindex="-1" href="https://www.the-art-of-web.com/php/captcha/">CAPTCHA</a><strong>*</strong>: <input id="captcha_code" type="text" required="" pattern="\d{5}" name="captcha" size="8" maxlength="5"></label>
+ <small>&lt;- copy the digits from the image into this box</small></p>
+<p><input type="submit" name="submit" value="Send Feedback"></p>
+</form>
+
+<p class="instruction">press &lt;Esc&gt; or click outside this box to close</p>
+
+</div> <!-- #feedback -->
+<h2 id="user_comments">5. User Comments</h2>
+
+<a class="post_comment show_feedback">Post your comment or question</a>
+
+<div id="comments">
+<div class="comment" data-hash="568f677623c630b0e9e3f5f5ac443ad3" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/568f677623c630b0e9e3f5f5ac443ad3.jpg?s=48&amp;d=mm&quot;);">
+<p class="comment_author"><big itemprop="author">David Leader</big> <span class="comment_time" itemprop="dateCreated">18 April, 2013</span></p>
+<div itemprop="text"><p>Interesting that if you paste é (e-acute) into UTF8 Encode it gives you Ã©, but if you try to UTF8 decode this you get � (question mark in a diamond). Why?</p></div>
+<div class="response">
+<p>If you put Ã© in the INPUT box and use UTF8 Decode it returns to é (e-acute).  With é in the INPUT box you get � as it can't be decoded. <img src="./Escaping Special Characters _ JavaScript _ The Art of Web_files/icon_cool.gif" width="15" height="15" border="0" alt=""></p>
+</div>
+</div>
+<div class="comment" data-hash="e7906877e9e7348af47e129db6dfaa2a" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/e7906877e9e7348af47e129db6dfaa2a.jpg?s=48&amp;d=mm&quot;);">
+<p class="comment_author"><a href="http://www.siliconmeadow.net/" target="_blank" rel="nofollow"><big itemprop="author">Richard Sheppard</big></a> <span class="comment_time" itemprop="dateCreated">26 June, 2012</span></p>
+<div itemprop="text"><p>Thank you very much for posting this. Perhaps you might consider adding <a href="http://php.net/json-encode" target="_blank">json_encode</a>?</p></div>
+<div class="response">
+<p>It's been added as an option now - the JSON functions didn't exist when the article was first written <img src="./Escaping Special Characters _ JavaScript _ The Art of Web_files/icon_cool.gif" width="15" height="15" border="0" alt=""></p>
+</div>
+</div>
+<div class="comment" data-hash="cc2dc7f0efd9e8f1e580336e3c91c444" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/cc2dc7f0efd9e8f1e580336e3c91c444.jpg?s=48&amp;d=mm&quot;);">
+<p class="comment_author"><big itemprop="author">Richard Lund</big> <span class="comment_time" itemprop="dateCreated">23 December, 2011</span></p>
+<div itemprop="text"><p>Thanks so much for this site!</p>
+
+<p>I have spent hours and hours on trying to get special characters to be properly encoded from PHP into XML code to be picked up by Ajax and then properly decoded, and I ran into nothing but issues with either the XML not being parseable or the characters getting messed up, and using this site I was finally able to find the one combination that worked for me - rawurlencode -&gt; decodeURIComponent. I also noticed that I had to allow PHP to make 2 characters out of certain special characters (registration symbol) and save it to MySQL as two characters for the decoding to work.</p>
+
+<p>In my case, when displaying my database content with special characters correctly in a text field using just plain PHP, what worked the best for me was:</p>
+
+<p>echo htmlentities(rawurldecode($mixedString), ENT_QUOTES, "UTF-8");</p>
+
+<p>Note that I think your database AND your HTML code need to be encoded with UTF-8, too.</p>
+
+<p>Great way of demonstrating what these functions do - thanks again!</p></div>
+</div>
+<div class="comment" data-hash="ba7dadef8b6ec3a0c23517c327c9b694" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/ba7dadef8b6ec3a0c23517c327c9b694.jpg?s=48&amp;d=mm&quot;);">
+<p class="comment_author"><big itemprop="author">lsi</big> <span class="comment_time" itemprop="dateCreated">27 November, 2010</span></p>
+<div itemprop="text"><p>the pasting-from-Word prob can be fixed with a function such as transcribe_cp1252_to_lat­in1 <img src="./Escaping Special Characters _ JavaScript _ The Art of Web_files/icon_smile.gif" width="15" height="15" border="0" alt=""></p>
+
+<p><a href="http://php.net/manual/en/function.strtr.php#80591" target="_blank">php.net/manual/en/function.strtr.php#80591</a></p></div>
+</div>
+<div class="comment" data-hash="d35cd23b252b978f0b8cfaaa511c4355" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/d35cd23b252b978f0b8cfaaa511c4355.jpg?s=48&amp;d=mm&quot;);">
+<p class="comment_author"><big itemprop="author">MetalPenguen</big> <span class="comment_time" itemprop="dateCreated">24 November, 2010</span></p>
+<div itemprop="text"><p>thank you very much for this page, it has been very helpful to me. i just want to add an info:<br>
+if you are using ajax(post) forms or in a similar occasion, you can use encodeURIComponent on javascript side and 'conditional' stripslashes on php side, like:<br>
+<code>$Name = get_magic_quotes_gpc() ? stripslashes($_POST['Name']) : $_POST['Name'];</code><br>
+- urldecode() will be automatically executed on server for $_POST parameters.<br>
+- if you want to output data in html directly, use php command nl2br, for line breaks etc.<br>
+- for unicode chars, html files should be saved with code page utf-8 char set. nothing extra to do with code.<br>
+- for details and whys, read official documentations of these commands.</p></div>
+</div>
+<div class="comment" data-hash="a8c9322c0aff859ec2ab977c728200d1" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/a8c9322c0aff859ec2ab977c728200d1.jpg?s=48&amp;d=mm&quot;);">
+<p class="comment_author"><big itemprop="author">Chris Leong</big> <span class="comment_time" itemprop="dateCreated">28 September, 2010</span></p>
+<div itemprop="text"><p>I have found that characters like ' or - aren't encoded by htmlentities and therefore appear weird in the HTML.</p></div>
+<div class="response">
+<p>A plain ' or - will not cause problems.  It's when you copy and paste a 'smart quote' or different type of dash from a source (e.g. Microsoft Word) that uses a different character encoding from your web page.  The easiest solution is to work only with UTF-8 (Unicode) or Plain Text (ASCII) content.</p>
+</div>
+</div>
+<div class="comment" data-hash="40202720ce7ae0ad9dd0da2a1d6e4f4a" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/40202720ce7ae0ad9dd0da2a1d6e4f4a.jpg?s=48&amp;d=mm&quot;);">
+<p class="comment_author"><a href="http://quickservewebsites.com/" target="_blank" rel="nofollow"><big itemprop="author">Edward P Sullivan</big></a> <span class="comment_time" itemprop="dateCreated">18 July, 2010</span></p>
+<div itemprop="text"><p>Excellent examples of escaping characters! Wish I found this site sooner. Thanks Ed.</p></div>
+</div>
+<div class="comment" data-hash="261c40d30db48a0eff7a1d45af4ad90d" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/261c40d30db48a0eff7a1d45af4ad90d.jpg?s=48&amp;d=mm&quot;);">
+<p class="comment_author"><big itemprop="author">Mr. Norman</big> <span class="comment_time" itemprop="dateCreated">3 July, 2010</span></p>
+<div itemprop="text"><p>Is it possible to see the sourcecode behind your "JavaScript: Escaping Special Characters" i would love to have that on my pc when i look at codes that has the special chars and i am working offline.</p></div>
+<div class="response">
+<p>The JavaScript functions are already visible in the page code.  The PHP functions require a server-side script - so won't work offline anyway.</p>
+</div>
+</div>
+<div class="comment" data-hash="64c5ab7bb41c88ac3e0233db13a41177" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/64c5ab7bb41c88ac3e0233db13a41177.jpg?s=48&amp;d=mm&quot;);">
+<p class="comment_author"><big itemprop="author">Daniel Topp</big> <span class="comment_time" itemprop="dateCreated">21 September, 2008</span></p>
+<div itemprop="text"><p>I noticed that the percent sign % doesn't properly decode in javascript. It will encode to %25, but gives a javascript error when trying to decode. Were you aware of this bug and are there any known fixes?</p></div>
+<div class="response">
+<p>The definition of the <a href="http://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Global_Functions/decodeURI" target="_blank">decodeURI</a> function is that it "decodes a Uniform Resource Identifier (URI) previously created by encodeURI or by a similar routine" and "does not decode escape sequences that could not have been introduced by encodeURI".  You will need to use a different function, or write your own, if your string is not already properly encoded.</p>
+</div>
+</div>
+<div class="comment" data-hash="275fa8250a3b5ac34e0aab9b47f4b592" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/275fa8250a3b5ac34e0aab9b47f4b592.jpg?s=48&amp;d=mm&quot;);">
+<p class="comment_author"><a href="http://www.ancient-ritual.com/" target="_blank" rel="nofollow"><big itemprop="author">godlike</big></a> <span class="comment_time" itemprop="dateCreated">24 March, 2008</span></p>
+<div itemprop="text"><p>very helpful page. Maybe you should add an encoding option so we can test the funcs with different encodings.</p></div>
+<div class="response">
+<p>That's a great idea, but I'm still a bit clueless when it comes to encoding - everything we do is locked down as UTF-8.  If I could just work out where to start...</p>
+</div>
+</div>
+<div class="comment" data-hash="88734aad78dab21c4e353fdcf1a93fac" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/88734aad78dab21c4e353fdcf1a93fac.jpg?s=48&amp;d=mm&quot;);">
+<p class="comment_author"><big itemprop="author">Linda Fahlberg-Stojanovska</big> <span class="comment_time" itemprop="dateCreated">12 January, 2008</span></p>
+<div itemprop="text"><p>THANK-YOU!!! I needed this table for my pmwiki and   finally found it here and so beautifully organized.</p></div>
+</div>
+<div class="comment" data-hash="cb81ca9a499972e08114d4a290ab2119" itemscope="" itemtype="http://schema.org/Comment" style="background-image: url(&quot;//www.gravatar.com/avatar/cb81ca9a499972e08114d4a290ab2119.jpg?s=48&amp;d=mm&quot;);">
+<p class="comment_author"><big itemprop="author">Praveen</big> <span class="comment_time" itemprop="dateCreated">26 April, 2007</span></p>
+<div itemprop="text"><p>When user copies the data from microsoft word to my PHP application this often inserts unidentified characters. Is there a permant solutions for this?</p></div>
+<div class="response">
+<p>Not if they insist on using Word.  The problem is that Word uses it's own <a href="http://www.microsoft.com/truetype/unicode/cscp.htm" target="_blank">Character Set</a> which uses characters that aren't compatible with a lot of websites or databases.</p>
+
+<p>You can improve things slightly by disabling all "AutoCorrect" and "AutoReplace" features in Word which will fix a lot of problems with quotes, dashes and list markers, but beyond that things can get complicated.</p>
+</div>
+</div>
+</div>
+
+<script>var loadAllCommentsAjax=function(value,target){if(encodeURIComponent){var params={"page":"/javascript/escape/"};if(typeof AjaxRequestXML=="undefined"){var script=document.createElement("script");script.onload=function(){(new AjaxRequestXML()).post("/scripts/loadallcomments.xml",params);}
+script.src="/scripts/AjaxRequestXML.js";document.head.appendChild(script);return true;}else{return(new AjaxRequestXML()).post("/scripts/loadallcomments.xml",params);}}}
+var comments_onload=function(){var arr=document.getElementById("comments").getElementsByTagName("div");for(var i=0;i<arr.length;i++){if((arr[i].className=="comment")&&(hash=arr[i].getAttribute("data-hash"))){arr[i].style.backgroundImage="url(//www.gravatar.com/avatar/"+hash+".jpg?s=48&d=mm)";}}};if(document.addEventListener){document.addEventListener("DOMContentLoaded",comments_onload,false);}else{window.attachEvent("onload",comments_onload);}</script>
+
+<div class="clear"></div>
+</main>
+
+<footer id="copyright">
+<a href="https://www.the-art-of-web.com/copyright.html">© Copyright 2020</a> <a href="https://www.chirp.com.au/" target="_blank">Chirp Internet</a> 
+- Page Last Modified: 15 December 2017 
+- <a href="https://www.the-art-of-web.com/cookies.html">Privacy &amp; Cookies</a>
+</footer>
+
+<a class="totop" href="https://www.the-art-of-web.com/javascript/escape/#content" onclick="document.getElementById(&#39;content&#39;).scrollIntoView(true); return false;">top</a>
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-3458555-1','auto');ga('send','pageview');</script>
+<script src="./Escaping Special Characters _ JavaScript _ The Art of Web_files/combined.js,q4.pagespeed.jm.2OAPZM4J5t.js"></script>
+<script>var mySuggest=new Suggestor("sitesearch","suggest","/scripts/autosuggest.xml",{regex:/^.{3,12}$/});window.onerror=function(msg,url,line){if(encodeURIComponent){var AjaxTarget="/scripts/logerror.xml";var params={"msg":msg,"url":url,"line":line};if(typeof AjaxRequestXML=="undefined"){var script=document.createElement("script");script.onload=function(){(new AjaxRequestXML()).post(AjaxTarget,params);}
+script.src="/scripts/AjaxRequestXML.js";document.head.appendChild(script);return true;}else{return(new AjaxRequestXML()).post(AjaxTarget,params);}}return false;}</script>
+
+<!-- web development by chirp internet -->
+
+
+</body></html>
