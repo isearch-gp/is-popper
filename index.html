@@ -97,12 +97,6 @@
 <nav id="menu" itemscope="" itemtype="http://schema.org/WebSite" class="menu">
 <meta itemprop="url" content="https://www.the-art-of-web.com/">
 <!--
-<form id="searchbox" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction" method="POST" action="https://www.the-art-of-web.com/searchresult.html" accept-charset="UTF-8" onsubmit="return (words.value != &#39;&#39;);">
-<meta itemprop="target" content="https://www.the-art-of-web.com/searchresult.html?words={words}">
-<input id="sitesearch" itemprop="query-input" type="search" results="10" autosave="searches" name="words" placeholder="Search">
-<ul id="suggest"><li></li></ul>
-</form>
--->
 <ul>
   <li id="menu_trigger"><a href="https://www.the-art-of-web.com/javascript/escape/#">≡</a></li>
   <li><a accesskey="1" href="https://www.the-art-of-web.com/">Home</a></li>
@@ -114,6 +108,7 @@
   <li><a accesskey="7" href="https://www.the-art-of-web.com/system/">System</a></li>
   <li><a accesskey="8" href="https://www.the-art-of-web.com/links/">Links</a></li>
 </ul>
+-->
 </nav>
 <!--/htdig_noindex-->
 </header>
@@ -165,71 +160,31 @@ backslashes, single- and double-quotes.</p>
 <p>Here you can see how the various JavaScript and PHP functions apply
 to a range of common characters.</p>
 
-<table class="collapse" style="text-align: center;" width="100%">
-<tbody><tr>
-<td>Input</td>
-<td colspan="3">JavaScript</td>
-<td colspan="3" style="background-color: #ffc;">PHP</td>
-</tr>
-</tbody></table>
-
-<p>The <a href="http://www.ietf.org/rfc/rfc1738.txt" target="_blank">RFC
-1738</a> specifications make fascinating reading - considering that the
-document is 10 years old yet still applicable.</p>
-
-
 <h2 id="section_3">4. References</h2>
 
 <ul>
   <li><a href="http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Guide:Functions" target="_blank">Core JavaScript Guide 1.5: Functions</a></li>
-  <li><a href="http://blogs.bwerp.net/archives/2004/08/27/escaping" target="_blank">Escaping JavaScript for PHP</a></li>
 </ul>
 
-
-<p><a href="https://www.the-art-of-web.com/javascript/">&lt; JavaScript</a></p>
 
 <script type="text/javascript">(function(){var arr=document.getElementById("escape").getElementsByTagName("textarea");for(var i=1;i<arr.length;i++){arr[i].addEventListener("click",function(){if(this.value){this.focus();this.select();}});}}());</script>
 
 <div class="clear"></div>
 
 <!-- start feedback form -->
-<div id="feedback">
-<h4>Send a message to The Art of Web:</h4>
-
-</div> <!-- #feedback -->
-<h2 id="user_comments">5. User Comments</h2>
-
-<div id="comments">
-</div>
 
 </div>
 </div>
 </div>
-
-<!--
-<script>var loadAllCommentsAjax=function(value,target){if(encodeURIComponent){var params={"page":"/javascript/escape/"};if(typeof AjaxRequestXML=="undefined"){var script=document.createElement("script");script.onload=function(){(new AjaxRequestXML()).post("/scripts/loadallcomments.xml",params);}
-script.src="/scripts/AjaxRequestXML.js";document.head.appendChild(script);return true;}else{return(new AjaxRequestXML()).post("/scripts/loadallcomments.xml",params);}}}
-var comments_onload=function(){var arr=document.getElementById("comments").getElementsByTagName("div");for(var i=0;i<arr.length;i++){if((arr[i].className=="comment")&&(hash=arr[i].getAttribute("data-hash"))){arr[i].style.backgroundImage="url(//www.gravatar.com/avatar/"+hash+".jpg?s=48&d=mm)";}}};if(document.addEventListener){document.addEventListener("DOMContentLoaded",comments_onload,false);}else{window.attachEvent("onload",comments_onload);}</script>
--->
 
 <div class="clear"></div>
 </main>
 
 <footer id="copyright">
-<a href="https://www.the-art-of-web.com/copyright.html">© Copyright 2020</a> <a href="https://www.chirp.com.au/" target="_blank">Chirp Internet</a> 
 - Page Last Modified: 15 December 2017 
-- <a href="https://www.the-art-of-web.com/cookies.html">Privacy &amp; Cookies</a>
 </footer>
 
 <a class="totop" href="https://www.the-art-of-web.com/javascript/escape/#content" onclick="document.getElementById(&#39;content&#39;).scrollIntoView(true); return false;">top</a>
 
-<!--
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-3458555-1','auto');ga('send','pageview');</script>
--->
-
 <script src="./js/combined.js,q4.pagespeed.jm.2OAPZM4J5t.js"></script>
-<!--
-<script>var mySuggest=new Suggestor("sitesearch","suggest","/scripts/autosuggest.xml",{regex:/^.{3,12}$/});window.onerror=function(msg,url,line){if(encodeURIComponent){var AjaxTarget="/scripts/logerror.xml";var params={"msg":msg,"url":url,"line":line};if(typeof AjaxRequestXML=="undefined"){var script=document.createElement("script");script.onload=function(){(new AjaxRequestXML()).post(AjaxTarget,params);}
-script.src="/scripts/AjaxRequestXML.js";document.head.appendChild(script);return true;}else{return(new AjaxRequestXML()).post(AjaxTarget,params);}}return false;}</script>
--->
 </body></html>
